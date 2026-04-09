@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Terms of Service | Bridgeport SCV123</title>
+  <meta name="description" content="Terms of Service for Bridgeport.SCV123.com. Learn about the terms governing your use of our real estate website and services.">
+  <link rel="canonical" href="https://bridgeport.scv123.com/terms-of-service">
+  <meta name="robots" content="index, follow">
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Connor T. MacIvor",
+    "image": "https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png",
+    "url": "https://bridgeport.scv123.com",
+    "telephone": "+16614001720",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "25060 Avenue Stanford Suite 150",
+      "addressLocality": "Valencia",
+      "addressRegion": "CA",
+      "postalCode": "91355",
+      "addressCountry": "US"
+    },
+    "areaServed": "Santa Clarita Valley",
+    "description": "Bridgeport Valencia neighborhood real estate specialist. Sellers-only representation.",
+    "hasCredential": "CALDRE #01238257",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "SYNC Brokerage"
+    }
+  }
+  </script>
+  <!-- Preload fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0B0F1C;
+      color: #EDF2F7;
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+    /* TRON BACKGROUND LINES */
+    .tron-line-vertical, .tron-line-horizontal {
+      position: fixed;
+      background: linear-gradient(180deg, transparent, #4F9DA6, transparent);
+      box-shadow: 0 0 15px #4F9DA6;
+      z-index: 0;
+      opacity: 0.25;
+      pointer-events: none;
+    }
+    .tron-line-vertical {
+      top: 0;
+      width: 2px;
+      height: 0;
+      animation: tron-fall 8s infinite ease-in-out;
+    }
+    .tron-line-vertical:nth-child(1) { left: 10%; animation-duration: 8s; }
+    .tron-line-vertical:nth-child(2) { left: 30%; animation-duration: 12s; animation-delay: 2s; width: 1px; }
+    .tron-line-vertical:nth-child(3) { left: 70%; animation-duration: 10s; animation-delay: 1s; width: 1.5px; }
+    .tron-line-vertical:nth-child(4) { left: 90%; animation-duration: 15s; animation-delay: 3s; width: 1px; }
+    .tron-line-horizontal {
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: linear-gradient(90deg, transparent, #4F9DA6, transparent);
+      animation: tron-scan 10s infinite linear;
+    }
+    .tron-line-horizontal:nth-child(5) { top: 20%; animation-duration: 14s; }
+    .tron-line-horizontal:nth-child(6) { top: 50%; animation-duration: 18s; animation-delay: 3s; height: 1.5px; }
+    .tron-line-horizontal:nth-child(7) { top: 80%; animation-duration: 12s; animation-delay: 6s; height: 1px; }
+    @keyframes tron-fall {
+      0% { top: -10%; height: 0; opacity: 0; }
+      20% { opacity: 0.4; }
+      50% { top: 50%; height: 60%; opacity: 0.3; }
+      80% { opacity: 0.4; }
+      100% { top: 110%; height: 0; opacity: 0; }
+    }
+    @keyframes tron-scan {
+      0% { left: -10%; width: 0; opacity: 0; }
+      20% { opacity: 0.4; }
+      50% { left: 25%; width: 50%; opacity: 0.3; }
+      80% { opacity: 0.4; }
+      100% { left: 110%; width: 0; opacity: 0; }
+    }
+    /* CURSOR GLOW */
+    #cursor-glow {
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle at center, rgba(79,157,166,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+    /* HEADER */
+    .site-header {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(79,157,166,0.2);
+      background: rgba(11,15,28,0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .logo-area {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .domain a {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFFFFF, #9ADBE8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: none;
+    }
+    .domain a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .tagline {
+      color: #94A3B8;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    /* GOLD HIGHLIGHT */
+    .gold-highlight { color: #FFD700; font-weight: 800; }
+    .btn-gold {
+      display: inline-block;
+      background: transparent;
+      color: #FFD700;
+      font-weight: 700;
+      padding: 0.8rem 2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid #FFD700;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 0 15px rgba(255,215,0,0.3);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-gold:hover {
+      background: #FFD700;
+      color: #0B0F1C;
+      box-shadow: 0 0 30px rgba(255,215,0,0.6);
+      transform: translateY(-2px);
+    }
+    /* TYPOGRAPHY */
+    h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 800;
+      animation: fadeInUp 0.8s ease-out;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin: 2rem 0 1rem;
+      background: linear-gradient(135deg, #FFFFFF 0%, #B0E0E6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin: 1.5rem 0 1rem;
+      color: #FFD700;
+    }
+    .container {
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+    section { padding: 5rem 0; position: relative; z-index: 5; }
+    .bg-topography {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.8 30 L60 30 M30 5.2 L30 0 M5.2 30 L0 30 M30 54.8 L30 60' stroke='rgba(79,157,166,0.2)' stroke-width='0.5' fill='none' /%3E%3C/svg%3E");
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+    /* CONTENT STYLES */
+    .policy-content {
+      background: rgba(18,25,40,0.5);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 2.5rem;
+      backdrop-filter: blur(5px);
+      transition: all 0.2s ease;
+    }
+    .policy-content p {
+      margin-bottom: 1.25rem;
+      color: #CBD5E0;
+    }
+    .policy-content ul, .policy-content ol {
+      margin: 1rem 0 1.5rem 2rem;
+      color: #CBD5E0;
+    }
+    .policy-content li {
+      margin-bottom: 0.5rem;
+    }
+    .policy-content a {
+      color: #FFD700;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,215,0,0.3);
+    }
+    .policy-content a:hover {
+      color: #4F9DA6;
+      border-bottom-color: #4F9DA6;
+    }
+    .policy-content strong {
+      color: #FFD700;
+    }
+    .effective-date {
+      color: #4F9DA6;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255,215,0,0.2);
+    }
+    /* AGENT CARD (smaller version) */
+    .agent-card-mini {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: rgba(18,25,40,0.7);
+      backdrop-filter: blur(8px);
+      border: 2px solid #FFD700;
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      margin: 3rem 0 0;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .agent-photo {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #FFD700;
+      box-shadow: 0 0 20px rgba(255,215,0,0.2);
+    }
+    .agent-details { flex: 1; }
+    .agent-name { font-weight: 700; font-size: 1.3rem; color: white; }
+    .agent-title { color: #FFD700; font-weight: 600; font-size: 1rem; margin-bottom: 0.5rem; }
+    .agent-contact { font-size: 0.9rem; color: #94A3B8; line-height: 1.5; }
+    .agent-license { font-size: 0.85rem; color: #718096; margin-top: 0.25rem; }
+    @media (max-width: 640px) {
+      .agent-card-mini { flex-direction: column; text-align: center; padding: 1.5rem; }
+      .agent-photo { width: 120px; }
+      .policy-content { padding: 1.5rem; }
+    }
+    /* FOOTER */
+    footer {
+      background: #070B14;
+      padding: 4rem 0 2rem;
+      border-top: 1px solid rgba(255,215,0,0.2);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-col p, .footer-col a {
+      color: #94A3B8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+    .footer-col a:hover {
+      color: #FFD700;
+    }
+    .footer-col strong {
+      color: #FFD700;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .social-links a:hover {
+      color: #FFD700;
+    }
+    hr { border: 0.5px solid rgba(255,255,255,0.05); margin: 2rem 0; }
+    .text-center { text-align: center; }
+    /* ANIMATIONS */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://bridgeport.scv123.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bridgeport.scv123.com/og-image.png"></head>
+<body>
+  <!-- Tron background lines -->
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-horizontal"></div>
+  <div class="tron-line-horizontal"></div>
+  <div class="tron-line-horizontal"></div>
+
+  <!-- Cursor glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="domain"><a href="https://bridgeport.scv123.com" target="_blank">Bridgeport.SCV123.com</a></span>
+        <span class="tagline">Valencia's Lakeside Community — Know What Your Home Is Worth</span>
+      </div>
+      <div>
+        <a href="https://bridgeport.scv123.com" class="btn-gold" target="_blank">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section style="padding: 4rem 0;">
+    <div class="bg-topography"></div>
+    <div class="container">
+      <div class="policy-content">
+        <h1><span class="gold-highlight">Terms of Service</span></h1>
+        <div class="effective-date">
+          Effective Date: February 19, 2026 | Last Updated: February 19, 2026
+        </div>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>Welcome to SCV123.com (the "Website"). These Terms of Service ("Terms") are a legally binding agreement between you and Connor T. MacIvor, DRE #01238257, with SYNC Brokerage ("we," "us," or "our"). By accessing or using our Website, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy [citation:9].</p>
+        <p>If you do not agree with these Terms, you must not access or use the Website.</p>
+
+        <h2>2. Use of Website and Services</h2>
+        <p>This Website provides real estate information and services for the Santa Clarita Valley. You agree to use the Website only for lawful purposes and in a manner that does not infringe the rights of others [citation:1].</p>
+        <ul>
+          <li>You must be at least 18 years of age to use our services.</li>
+          <li>You agree not to use automated systems (robots, spiders, etc.) to access the Website.</li>
+          <li>We reserve the right to modify or discontinue any part of our services at any time.</li>
+        </ul>
+
+        <h2>3. Real Estate Information and IDX Disclaimer</h2>
+        <p>The property listing information on this Website is provided by an Internet Data Exchange (IDX) service and is sourced from the local Multiple Listing Service (MLS). This information is intended for your personal, non-commercial use [citation:5][citation:9].</p>
+        <p><strong>IMPORTANT DISCLAIMERS:</strong></p>
+        <ul>
+          <li>All data, including measurements and calculations of area, is obtained from various sources and has not been verified by us or the MLS. All information should be independently reviewed and verified for accuracy [citation:9].</li>
+          <li>Properties may or may not be listed by the office/agent presenting the information.</li>
+          <li>IDX information is provided exclusively for consumers' personal, non-commercial use and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing.</li>
+          <li>Information is deemed reliable but not guaranteed to be accurate.</li>
+        </ul>
+
+        <h2>4. Communications and Consent (TCPA & CAN-SPAM)</h2>
+        <p>Our Website is integrated with GoHighLevel (GHL), which we use to manage communications, including emails, phone calls, and SMS/text messages [citation:5][citation:9].</p>
+        <p>By providing your contact information (including your phone number and email address) through any form on this Website, you expressly consent to be contacted by us, our agents, and our AI Voice Agent for marketing and informational purposes via:</p>
+        <ul>
+          <li><strong>SMS/Text Messages:</strong> Message and data rates may apply. You can opt out at any time by replying "STOP" to any message.</li>
+          <li><strong>Phone Calls:</strong> Including automated or pre-recorded calls.</li>
+          <li><strong>Emails:</strong> You can unsubscribe from marketing emails by clicking the "Unsubscribe" link in any email.</li>
+        </ul>
+        <p>Your consent to receive communications is not a condition of purchasing any property, goods, or services [citation:9].</p>
+
+        <h2>5. AI Voice Agent Disclosure</h2>
+        <p>We utilize an AI-powered voice agent to assist with scheduling, follow-ups, and initial inquiries. You acknowledge and agree that [citation:5][citation:9]:</p>
+        <ul>
+          <li>Your calls with our AI agent may be recorded, transcribed, and analyzed for quality assurance, training, and service improvement purposes.</li>
+          <li>The AI agent is a software service and may not be able to answer all questions or handle all situations.</li>
+          <li>We do not guarantee the accuracy or completeness of information provided by the AI agent.</li>
+        </ul>
+
+        <h2>6. Fair Housing Statement</h2>
+        <p>We are an equal opportunity real estate professional. We are committed to compliance with all federal, state, and local fair housing laws. We will not discriminate against any person because of race, color, religion, national origin, sex, familial status, disability, or any other specific classes protected by applicable laws [citation:5][citation:9].</p>
+
+        <h2>7. Intellectual Property</h2>
+        <p>All content on this Website, including text, graphics, logos, images, and software—excluding property data provided through IDX—is our property and is protected by United States and international copyright laws. You may not reproduce, distribute, modify, or create derivative works without our express written permission [citation:9].</p>
+
+        <h2>8. Third-Party Links and Services</h2>
+        <p>Our Website may contain links to third-party websites or services (e.g., mortgage lenders, title companies, social media). We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites or services [citation:1][citation:9].</p>
+
+        <h2>9. Disclaimer of Warranties</h2>
+        <p>THE WEBSITE AND ALL INFORMATION, CONTENT, MATERIALS, AND SERVICES ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. WE DISCLAIM ALL WARRANTIES, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT [citation:9].</p>
+        <p>WE DO NOT WARRANT THAT THE WEBSITE WILL BE UNINTERRUPTED, SECURE, OR ERROR-FREE.</p>
+
+        <h2>10. Limitation of Liability</h2>
+        <p>IN NO EVENT SHALL WE BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM (i) YOUR ACCESS TO OR USE OF THE WEBSITE; (ii) ANY CONDUCT OR CONTENT OF ANY THIRD PARTY; (iii) RELIANCE ON IDX/MLS DATA; OR (iv) UNAUTHORIZED ACCESS TO YOUR TRANSMISSIONS [citation:9].</p>
+
+        <h2>11. Indemnification</h2>
+        <p>You agree to defend, indemnify, and hold us harmless from any claims, damages, obligations, losses, liabilities, costs, or expenses (including attorney's fees) arising out of your use of the Website or breach of these Terms [citation:9].</p>
+
+        <h2>12. Governing Law</h2>
+        <p>These Terms shall be governed and construed in accordance with the laws of the State of California, without regard to its conflict of law provisions [citation:9].</p>
+
+        <h2>13. Changes to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. If a revision is material, we will provide notice. By continuing to access or use our Website after revisions become effective, you agree to be bound by the revised terms [citation:9].</p>
+
+        <h2>14. Contact Information</h2>
+        <p>If you have any questions about these Terms, please contact us [citation:5][citation:9]:</p>
+        
+        <div class="agent-card-mini">
+          <img src="https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png" alt="Connor T. MacIvor" class="agent-photo">
+          <div class="agent-details">
+            <div class="agent-name">Connor T. MacIvor</div>
+            <div class="agent-title">SYNC Brokerage</div>
+            <div class="agent-contact">25060 Avenue Stanford, Suite 150<br>Valencia, CA 91355<br>Phone: <a href="tel:6614001720">661-400-1720</a><br>Email: <a href="mailto:connor@SantaClaritaOpenHouses.com">connor@SantaClaritaOpenHouses.com</a></div>
+            <div class="agent-license">DRE #01238257</div>
+          </div>
+        </div>
+        
+        <p style="margin-top: 2rem; font-style: italic; color: #94A3B8;">If your home is currently listed for sale, this is not a solicitation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <strong>Connor T. MacIvor</strong>
+          <p>DRE #01238257<br>SYNC Brokerage</p>
+          <p>25060 Avenue Stanford, Suite 150<br>Valencia, CA 91355</p>
+          <p><a href="tel:6614001720" target="_blank">661-400-1720</a></p>
+          <p><a href="mailto:connor@SantaClaritaOpenHouses.com" target="_blank">connor@SantaClaritaOpenHouses.com</a></p>
+          <p><a href="https://www.SantaClaritaOpenHouses.com" target="_blank">SantaClaritaOpenHouses.com</a></p>
+          <p style="font-style: italic; margin-top:1rem; font-weight:700;">If your home is currently listed for sale this is not a solicitation.</p>
+        </div>
+        <div class="footer-col">
+          <strong>Connect</strong>
+          <div class="social-links">
+            <a href="https://facebook.com/santaclaritaopenhouses" target="_blank">Facebook</a>
+            <a href="https://x.com/connorwithhonor" target="_blank">X</a>
+            <a href="https://tiktok.com/@santaclaritaopenhouses" target="_blank">TikTok</a>
+            <a href="https://instagram.com/santaclaritaopenhouses" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/company/santaclaritaopenhouses" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <strong>Legal</strong>
+          <p><a href="https://bridgeport.scv123.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+          <p><a href="https://bridgeport.scv123.com/terms-of-service" target="_blank">Terms of Service</a></p>
+          <p>© 2026 Honor Elevate</p>
+        </div>
+      </div>
+      <p style="text-align:center;"><a href="https://honorelevate.com" target="_blank" style="color:#4F9DA6;">Coded by Connor with Honor | AI Growth Architect</a></p>
+      <hr>
+      <p style="text-align:center; color:#4A5568;">25060 Avenue Stanford, Suite 150, Valencia, CA 91355 | 661-400-1720</p>
+    </div>
+  </footer>
+
+  <!-- Analytics (placeholders) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Cursor glow script -->
+  <script>
+    (function() {
+      const cursorGlow = document.getElementById('cursor-glow');
+      if (cursorGlow) {
+        document.addEventListener('mousemove', (e) => {
+          cursorGlow.style.opacity = '1';
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+        });
+        document.addEventListener('mouseleave', () => {
+          cursorGlow.style.opacity = '0';
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Privacy Policy | Bridgeport SCV123</title>
+  <meta name="description" content="Privacy Policy for Bridgeport.SCV123.com. Learn how Connor T. MacIvor, DRE #01238257 with SYNC Brokerage collects, uses, and protects your personal information.">
+  <link rel="canonical" href="https://bridgeport.scv123.com/privacy-policy">
+  <meta name="robots" content="index, follow">
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Connor T. MacIvor",
+    "image": "https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png",
+    "url": "https://bridgeport.scv123.com",
+    "telephone": "+16614001720",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "25060 Avenue Stanford Suite 150",
+      "addressLocality": "Valencia",
+      "addressRegion": "CA",
+      "postalCode": "91355",
+      "addressCountry": "US"
+    },
+    "areaServed": "Santa Clarita Valley",
+    "description": "Bridgeport Valencia neighborhood real estate specialist. Sellers-only representation.",
+    "hasCredential": "CALDRE #01238257",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "SYNC Brokerage"
+    }
+  }
+  </script>
+  <!-- Preload fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0B0F1C;
+      color: #EDF2F7;
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+    /* TRON BACKGROUND LINES */
+    .tron-line-vertical, .tron-line-horizontal {
+      position: fixed;
+      background: linear-gradient(180deg, transparent, #4F9DA6, transparent);
+      box-shadow: 0 0 15px #4F9DA6;
+      z-index: 0;
+      opacity: 0.25;
+      pointer-events: none;
+    }
+    .tron-line-vertical {
+      top: 0;
+      width: 2px;
+      height: 0;
+      animation: tron-fall 8s infinite ease-in-out;
+    }
+    .tron-line-vertical:nth-child(1) { left: 10%; animation-duration: 8s; }
+    .tron-line-vertical:nth-child(2) { left: 30%; animation-duration: 12s; animation-delay: 2s; width: 1px; }
+    .tron-line-vertical:nth-child(3) { left: 70%; animation-duration: 10s; animation-delay: 1s; width: 1.5px; }
+    .tron-line-vertical:nth-child(4) { left: 90%; animation-duration: 15s; animation-delay: 3s; width: 1px; }
+    .tron-line-horizontal {
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: linear-gradient(90deg, transparent, #4F9DA6, transparent);
+      animation: tron-scan 10s infinite linear;
+    }
+    .tron-line-horizontal:nth-child(5) { top: 20%; animation-duration: 14s; }
+    .tron-line-horizontal:nth-child(6) { top: 50%; animation-duration: 18s; animation-delay: 3s; height: 1.5px; }
+    .tron-line-horizontal:nth-child(7) { top: 80%; animation-duration: 12s; animation-delay: 6s; height: 1px; }
+    @keyframes tron-fall {
+      0% { top: -10%; height: 0; opacity: 0; }
+      20% { opacity: 0.4; }
+      50% { top: 50%; height: 60%; opacity: 0.3; }
+      80% { opacity: 0.4; }
+      100% { top: 110%; height: 0; opacity: 0; }
+    }
+    @keyframes tron-scan {
+      0% { left: -10%; width: 0; opacity: 0; }
+      20% { opacity: 0.4; }
+      50% { left: 25%; width: 50%; opacity: 0.3; }
+      80% { opacity: 0.4; }
+      100% { left: 110%; width: 0; opacity: 0; }
+    }
+    /* CURSOR GLOW */
+    #cursor-glow {
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle at center, rgba(79,157,166,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+    /* HEADER */
+    .site-header {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(79,157,166,0.2);
+      background: rgba(11,15,28,0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .logo-area {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .domain a {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFFFFF, #9ADBE8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: none;
+    }
+    .domain a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .tagline {
+      color: #94A3B8;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    /* GOLD HIGHLIGHT */
+    .gold-highlight { color: #FFD700; font-weight: 800; }
+    .btn-gold {
+      display: inline-block;
+      background: transparent;
+      color: #FFD700;
+      font-weight: 700;
+      padding: 0.8rem 2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid #FFD700;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 0 15px rgba(255,215,0,0.3);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-gold:hover {
+      background: #FFD700;
+      color: #0B0F1C;
+      box-shadow: 0 0 30px rgba(255,215,0,0.6);
+      transform: translateY(-2px);
+    }
+    /* TYPOGRAPHY */
+    h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 800;
+      animation: fadeInUp 0.8s ease-out;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.5rem);
+      margin: 2rem 0 1rem;
+      background: linear-gradient(135deg, #FFFFFF 0%, #B0E0E6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin: 1.5rem 0 1rem;
+      color: #FFD700;
+    }
+    .container {
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+    section { padding: 5rem 0; position: relative; z-index: 5; }
+    .bg-topography {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.8 30 L60 30 M30 5.2 L30 0 M5.2 30 L0 30 M30 54.8 L30 60' stroke='rgba(79,157,166,0.2)' stroke-width='0.5' fill='none' /%3E%3C/svg%3E");
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+    /* CONTENT STYLES */
+    .policy-content {
+      background: rgba(18,25,40,0.5);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 2.5rem;
+      backdrop-filter: blur(5px);
+      transition: all 0.2s ease;
+    }
+    .policy-content p {
+      margin-bottom: 1.25rem;
+      color: #CBD5E0;
+    }
+    .policy-content ul, .policy-content ol {
+      margin: 1rem 0 1.5rem 2rem;
+      color: #CBD5E0;
+    }
+    .policy-content li {
+      margin-bottom: 0.5rem;
+    }
+    .policy-content a {
+      color: #FFD700;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,215,0,0.3);
+    }
+    .policy-content a:hover {
+      color: #4F9DA6;
+      border-bottom-color: #4F9DA6;
+    }
+    .policy-content strong {
+      color: #FFD700;
+    }
+    .policy-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      border: 1px solid rgba(79,157,166,0.3);
+    }
+    .policy-table th {
+      background: rgba(79,157,166,0.2);
+      color: #FFD700;
+      font-weight: 600;
+      padding: 1rem;
+      text-align: left;
+    }
+    .policy-table td {
+      padding: 1rem;
+      border: 1px solid rgba(79,157,166,0.2);
+      color: #CBD5E0;
+    }
+    .effective-date {
+      color: #4F9DA6;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255,215,0,0.2);
+    }
+    /* AGENT CARD (smaller version) */
+    .agent-card-mini {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: rgba(18,25,40,0.7);
+      backdrop-filter: blur(8px);
+      border: 2px solid #FFD700;
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      margin: 3rem 0 0;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .agent-photo {
+      width: 100px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #FFD700;
+      box-shadow: 0 0 20px rgba(255,215,0,0.2);
+    }
+    .agent-details { flex: 1; }
+    .agent-name { font-weight: 700; font-size: 1.3rem; color: white; }
+    .agent-title { color: #FFD700; font-weight: 600; font-size: 1rem; margin-bottom: 0.5rem; }
+    .agent-contact { font-size: 0.9rem; color: #94A3B8; line-height: 1.5; }
+    .agent-license { font-size: 0.85rem; color: #718096; margin-top: 0.25rem; }
+    @media (max-width: 640px) {
+      .agent-card-mini { flex-direction: column; text-align: center; padding: 1.5rem; }
+      .agent-photo { width: 120px; }
+      .policy-content { padding: 1.5rem; }
+    }
+    /* FOOTER */
+    footer {
+      background: #070B14;
+      padding: 4rem 0 2rem;
+      border-top: 1px solid rgba(255,215,0,0.2);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-col p, .footer-col a {
+      color: #94A3B8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+    .footer-col a:hover {
+      color: #FFD700;
+    }
+    .footer-col strong {
+      color: #FFD700;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .social-links a:hover {
+      color: #FFD700;
+    }
+    hr { border: 0.5px solid rgba(255,255,255,0.05); margin: 2rem 0; }
+    .text-center { text-align: center; }
+    /* ANIMATIONS */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://bridgeport.scv123.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bridgeport.scv123.com/og-image.png"></head>
+<body>
+  <!-- Tron background lines -->
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-horizontal"></div>
+  <div class="tron-line-horizontal"></div>
+  <div class="tron-line-horizontal"></div>
+
+  <!-- Cursor glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="domain"><a href="https://bridgeport.scv123.com" target="_blank">Bridgeport.SCV123.com</a></span>
+        <span class="tagline">Valencia's Lakeside Community — Know What Your Home Is Worth</span>
+      </div>
+      <div>
+        <a href="https://bridgeport.scv123.com" class="btn-gold" target="_blank">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section style="padding: 4rem 0;">
+    <div class="bg-topography"></div>
+    <div class="container">
+      <div class="policy-content">
+        <h1><span class="gold-highlight">Privacy Policy</span></h1>
+        <div class="effective-date">
+          Effective Date: February 19, 2026 | Last Updated: February 19, 2026
+        </div>
+        
+        <p>This Privacy Policy describes how Connor T. MacIvor, DRE #01238257, with SYNC Brokerage ("we," "us," or "our") collects, uses, and discloses your personal information when you visit or interact with SCV123.com (the "Site"). We are committed to protecting your privacy and complying with applicable laws, including the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA) [citation:5].</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>We collect information that identifies, relates to, describes, or could reasonably be linked with a particular consumer or household ("personal information"). In the last 12 months, we have collected the following categories of personal information [citation:2][citation:3]:</p>
+
+        <table class="policy-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Examples</th>
+              <th>Collected</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Identifiers</td><td>Name, email address, phone number, postal address, IP address</td><td>YES</td></tr>
+            <tr><td>California Customer Records (Cal. Civ. Code § 1798.80(e))</td><td>Name, address, phone number, financial information (for pre-qualification), signature</td><td>YES</td></tr>
+            <tr><td>Protected Characteristics</td><td>Age, marital status, gender (only if voluntarily provided)</td><td>NO</td></tr>
+            <tr><td>Commercial Information</td><td>Properties viewed, saved searches, transaction history</td><td>YES</td></tr>
+            <tr><td>Internet/Network Activity</td><td>Browsing history, search history, interactions with our Site and emails</td><td>YES</td></tr>
+            <tr><td>Geolocation Data</td><td>General location (city/state from IP address)</td><td>YES</td></tr>
+            <tr><td>Sensory Data</td><td>Call recordings with our AI Voice Agent for quality assurance</td><td>YES</td></tr>
+            <tr><td>Sensitive Personal Information</td><td>Social Security number, driver's license (only for transactions with your consent)</td><td>YES (with consent)</td></tr>
+          </tbody>
+        </table>
+
+        <h2>2. How We Collect Your Information</h2>
+        <p>We obtain personal information from the following sources [citation:4][citation:5]:</p>
+        <ul>
+          <li><strong>Directly from you:</strong> When you fill out forms on our Site, communicate with us via email, SMS, phone, or our AI Voice Agent.</li>
+          <li><strong>Automatically:</strong> Through cookies and similar technologies when you browse our Site (see Section 6).</li>
+          <li><strong>From third parties:</strong> Service providers such as GoHighLevel (our CRM), IDX Broker (MLS data provider), and analytics providers.</li>
+        </ul>
+
+        <h2>3. How We Use Your Information</h2>
+        <p>We use your personal information for the following business and commercial purposes [citation:1][citation:9]:</p>
+        <ul>
+          <li>To provide real estate services, including property searches, market analysis, and facilitating transactions.</li>
+          <li>To communicate with you via email, SMS/text messages, phone calls, and our AI Voice Agent through GoHighLevel.</li>
+          <li>To personalize your experience and provide property recommendations.</li>
+          <li>For marketing and advertising, including newsletters and promotional materials (you may opt out at any time).</li>
+          <li>To operate, improve, and secure our Site.</li>
+          <li>To comply with legal obligations, including California Department of Real Estate requirements and fair housing laws.</li>
+        </ul>
+        <p><strong>Consent to Communicate:</strong> By providing your contact information, you expressly consent to receive communications from us via phone, text message, and email, including marketing messages, even if your number is on a Do Not Call list. You may opt out at any time by replying "STOP" to any text message or using the unsubscribe link in emails. Message and data rates may apply [citation:5][citation:9].</p>
+
+        <h2>4. Disclosure of Personal Information</h2>
+        <p>We do not sell your personal information in exchange for money. We may share your information with the following categories of third parties for business purposes [citation:5][citation:8]:</p>
+        <ul>
+          <li><strong>Service Providers:</strong> GoHighLevel (CRM, marketing automation), IDX Broker (MLS/listing data), cloud hosting providers, analytics providers.</li>
+          <li><strong>Real Estate Partners (with your consent):</strong> Mortgage lenders, title companies, inspectors, and referring agents to facilitate your transaction.</li>
+          <li><strong>Legal and Law Enforcement:</strong> When required by law or to protect our rights.</li>
+        </ul>
+        <p>In the preceding 12 months, we have disclosed the following categories of personal information for business purposes: Identifiers, California Customer Records, Commercial Information, Internet Activity, and Geolocation Data [citation:4].</p>
+
+        <h2>5. Your California Privacy Rights (CCPA/CPRA)</h2>
+        <p>If you are a California resident, you have the following rights regarding your personal information [citation:2][citation:3][citation:5]:</p>
+        
+        <h3>Right to Know</h3>
+        <p>You may request that we disclose the categories and specific pieces of personal information we have collected about you, the sources from which it was collected, the business purpose for collection, and the categories of third parties with whom we shared it.</p>
+        
+        <h3>Right to Delete</h3>
+        <p>You may request that we delete any personal information we have collected from you, subject to certain exceptions (e.g., to complete a transaction or comply with a legal obligation).</p>
+        
+        <h3>Right to Correct</h3>
+        <p>You may request that we correct inaccurate personal information we maintain about you.</p>
+        
+        <h3>Right to Opt-Out of Sale/Sharing</h3>
+        <p>You have the right to opt out of the "sale" or "sharing" of your personal information for cross-context behavioral advertising. We do not sell your information, but you may still exercise this right.</p>
+        
+        <h3>Right to Limit Use of Sensitive Personal Information</h3>
+        <p>You may request that we limit our use of sensitive personal information (e.g., financial data) to that which is necessary to perform the services you requested.</p>
+        
+        <h3>Right to Non-Discrimination</h3>
+        <p>We will not discriminate against you for exercising any of your CCPA/CPRA rights.</p>
+        
+        <h3>How to Exercise Your Rights</h3>
+        <p>To exercise your rights, please submit a verifiable consumer request to us at:</p>
+        <p>Email: <a href="mailto:connor@SantaClaritaOpenHouses.com">connor@SantaClaritaOpenHouses.com</a><br>
+        Phone: <a href="tel:6614001720">661-400-1720</a></p>
+        <p>Only you, or an authorized agent registered with the California Secretary of State, may make a verifiable request. We will respond within 45 days [citation:3].</p>
+
+        <h2>6. Cookies and Tracking Technologies</h2>
+        <p>We use cookies and similar technologies to enhance your experience, analyze traffic, and personalize content. You can disable cookies in your browser settings, but some features may not function properly [citation:1]. We currently do not respond to "Do Not Track" signals [citation:4].</p>
+
+        <h2>7. Data Security and Retention</h2>
+        <p>We implement reasonable security measures to protect your personal information. However, no method of transmission over the Internet is 100% secure. We retain your information for as long as necessary to fulfill the purposes described in this policy, resolve disputes, and comply with legal obligations [citation:3][citation:5].</p>
+
+        <h2>8. Children's Privacy</h2>
+        <p>Our Site is not intended for individuals under the age of 16. We do not knowingly collect personal information from children under 16. If we become aware of such collection, we will delete it [citation:5].</p>
+
+        <h2>9. Links to Third-Party Websites</h2>
+        <p>Our Site may contain links to third-party websites (e.g., mortgage lenders, social media). We are not responsible for their privacy practices. We encourage you to review their policies [citation:1][citation:4].</p>
+
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. The "Last Updated" date at the top reflects the most recent changes. Your continued use of the Site constitutes acceptance of the revised policy [citation:5].</p>
+
+        <h2>11. Contact Information</h2>
+        <p>If you have questions or concerns about this Privacy Policy or our privacy practices, please contact us [citation:1][citation:5]:</p>
+        
+        <div class="agent-card-mini">
+          <img src="https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png" alt="Connor T. MacIvor" class="agent-photo">
+          <div class="agent-details">
+            <div class="agent-name">Connor T. MacIvor</div>
+            <div class="agent-title">SYNC Brokerage</div>
+            <div class="agent-contact">25060 Avenue Stanford, Suite 150<br>Valencia, CA 91355<br>Phone: <a href="tel:6614001720">661-400-1720</a><br>Email: <a href="mailto:connor@SantaClaritaOpenHouses.com">connor@SantaClaritaOpenHouses.com</a></div>
+            <div class="agent-license">DRE #01238257</div>
+          </div>
+        </div>
+        
+        <p style="margin-top: 2rem; font-style: italic; color: #94A3B8;">If your home is currently listed for sale, this is not a solicitation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <strong>Connor T. MacIvor</strong>
+          <p>DRE #01238257<br>SYNC Brokerage</p>
+          <p>25060 Avenue Stanford, Suite 150<br>Valencia, CA 91355</p>
+          <p><a href="tel:6614001720" target="_blank">661-400-1720</a></p>
+          <p><a href="mailto:connor@SantaClaritaOpenHouses.com" target="_blank">connor@SantaClaritaOpenHouses.com</a></p>
+          <p><a href="https://www.SantaClaritaOpenHouses.com" target="_blank">SantaClaritaOpenHouses.com</a></p>
+          <p style="font-style: italic; margin-top:1rem; font-weight:700;">If your home is currently listed for sale this is not a solicitation.</p>
+        </div>
+        <div class="footer-col">
+          <strong>Connect</strong>
+          <div class="social-links">
+            <a href="https://facebook.com/santaclaritaopenhouses" target="_blank">Facebook</a>
+            <a href="https://x.com/connorwithhonor" target="_blank">X</a>
+            <a href="https://tiktok.com/@santaclaritaopenhouses" target="_blank">TikTok</a>
+            <a href="https://instagram.com/santaclaritaopenhouses" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/company/santaclaritaopenhouses" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <strong>Legal</strong>
+          <p><a href="https://bridgeport.scv123.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+          <p><a href="https://bridgeport.scv123.com/terms-of-service" target="_blank">Terms of Service</a></p>
+          <p>© 2026 Honor Elevate</p>
+        </div>
+      </div>
+      <p style="text-align:center;"><a href="https://honorelevate.com" target="_blank" style="color:#4F9DA6;">Coded by Connor with Honor | AI Growth Architect</a></p>
+      <hr>
+      <p style="text-align:center; color:#4A5568;">25060 Avenue Stanford, Suite 150, Valencia, CA 91355 | 661-400-1720</p>
+    </div>
+  </footer>
+
+  <!-- Analytics (placeholders) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Cursor glow script -->
+  <script>
+    (function() {
+      const cursorGlow = document.getElementById('cursor-glow');
+      if (cursorGlow) {
+        document.addEventListener('mousemove', (e) => {
+          cursorGlow.style.opacity = '1';
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+        });
+        document.addEventListener('mouseleave', () => {
+          cursorGlow.style.opacity = '0';
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
