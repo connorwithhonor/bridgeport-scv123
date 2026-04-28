@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Bridgeport Valencia CA | Neighborhood Market Intelligence | SCV123</title>
+  <meta name="description" content="Bridgeport Valencia real estate — market trends, home values, lakeside community insights. Connor MacIvor, your Bridgeport neighborhood specialist.">
+  <link rel="canonical" href="https://bridgeport.scv123.com">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Connor T. MacIvor",
+    "image": "https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png",
+    "url": "https://bridgeport.scv123.com",
+    "telephone": "+16614001720",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "25060 Avenue Stanford Suite 150",
+      "addressLocality": "Valencia",
+      "addressRegion": "CA",
+      "postalCode": "91355",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Bridgeport, Valencia",
+      "containedInPlace": "Santa Clarita Valley"
+    },
+    "description": "Bridgeport Valencia neighborhood real estate specialist. Sellers-only representation. AI-powered local market intelligence. Exclusive buyer-agent network.",
+    "knowsAbout": ["Real estate", "Sellers-only agent", "Off-market listings", "Bridgeport HOA", "Lake community premium"],
+    "hasCredential": "CALDRE #01238257",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "SYNC Brokerage"
+    }
+  }
+  </script>
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Bridgeport Bridge Strategy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It's an off-market approach where we match your home with a qualified buyer before it ever hits the MLS. No open houses, no yard sign, no prep work—just a private, respectful transaction. You get to test the market with zero commitment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why work with a sellers-only agent?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "I never represent buyers. If a buyer contacts me directly, I refer them to a dedicated buyer-only specialist from my vetted network. This creates a hostile vetting environment where the buyer's agent must bring their best offer, knowing I'm 100% on your side."
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Preload fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0B0F1C;
+      color: #EDF2F7;
+      line-height: 1.5;
+      font-size: 16px;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
+    }
+    /* TRON BACKGROUND LINES */
+    .tron-line-vertical, .tron-line-horizontal {
+      position: fixed;
+      background: linear-gradient(180deg, transparent, #4F9DA6, transparent);
+      box-shadow: 0 0 15px #4F9DA6;
+      z-index: 0;
+      opacity: 0.25;
+      pointer-events: none;
+    }
+    .tron-line-vertical {
+      top: 0;
+      width: 2px;
+      height: 0;
+      animation: tron-fall 8s infinite ease-in-out;
+    }
+    .tron-line-vertical:nth-child(1) { left: 10%; animation-duration: 8s; }
+    .tron-line-vertical:nth-child(2) { left: 30%; animation-duration: 12s; animation-delay: 2s; width: 1px; }
+    .tron-line-vertical:nth-child(3) { left: 70%; animation-duration: 10s; animation-delay: 1s; width: 1.5px; }
+    .tron-line-vertical:nth-child(4) { left: 90%; animation-duration: 15s; animation-delay: 3s; width: 1px; }
+    .tron-line-horizontal {
+      left: 0;
+      height: 2px;
+      width: 0;
+      background: linear-gradient(90deg, transparent, #4F9DA6, transparent);
+      animation: tron-scan 10s infinite linear;
+    }
+    .tron-line-horizontal:nth-child(5) { top: 20%; animation-duration: 14s; }
+    .tron-line-horizontal:nth-child(6) { top: 50%; animation-duration: 18s; animation-delay: 3s; height: 1.5px; }
+    .tron-line-horizontal:nth-child(7) { top: 80%; animation-duration: 12s; animation-delay: 6s; height: 1px; }
+    @keyframes tron-fall {
+      0% { top: -10%; height: 0; opacity: 0; }
+      20% { opacity: 0.4; }
+      50% { top: 50%; height: 60%; opacity: 0.3; }
+      80% { opacity: 0.4; }
+      100% { top: 110%; height: 0; opacity: 0; }
+    }
+    @keyframes tron-scan {
+      0% { left: -10%; width: 0; opacity: 0; }
+      20% { opacity: 0.4; }
+      50% { left: 25%; width: 50%; opacity: 0.3; }
+      80% { opacity: 0.4; }
+      100% { left: 110%; width: 0; opacity: 0; }
+    }
+    /* CURSOR GLOW */
+    #cursor-glow {
+      position: fixed;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle at center, rgba(79,157,166,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+    /* HEADER */
+    .site-header {
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(79,157,166,0.2);
+      background: rgba(11,15,28,0.8);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .logo-area {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .domain a {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFFFFF, #9ADBE8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-decoration: none;
+    }
+    .domain a:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .tagline {
+      color: #94A3B8;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    /* GOLD HIGHLIGHT & BUTTONS */
+    .gold-highlight { color: #FFD700; font-weight: 800; }
+    .btn-gold {
+      display: inline-block;
+      background: transparent;
+      color: #FFD700;
+      font-weight: 700;
+      padding: 0.8rem 2rem;
+      border-radius: 40px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid #FFD700;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 0 15px rgba(255,215,0,0.3);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-gold:hover {
+      background: #FFD700;
+      color: #0B0F1C;
+      box-shadow: 0 0 30px rgba(255,215,0,0.6);
+      transform: translateY(-2px);
+    }
+    .btn-gold-large { font-size: 1.2rem; padding: 1.2rem 3rem; }
+    /* TYPOGRAPHY */
+    h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+    h1 {
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 800;
+      animation: fadeInUp 0.8s ease-out;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #FFFFFF 0%, #B0E0E6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .container {
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+    }
+    section { padding: 5rem 0; position: relative; z-index: 5; }
+    .bg-topography {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.8 30 L60 30 M30 5.2 L30 0 M5.2 30 L0 30 M30 54.8 L30 60' stroke='rgba(79,157,166,0.2)' stroke-width='0.5' fill='none' /%3E%3C/svg%3E");
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+    /* HERO CONTENT */
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    /* Hero video embed */
+    .hero-video {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto 2rem auto;
+      display: block;
+      border-radius: 20px;
+      border: 2px solid rgba(255,215,0,0.3);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+      overflow: hidden;
+      background: #000;
+    }
+    .hero-video .embed-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+    .hero-video .embed-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    /* IMPACT CARDS */
+    .impact-card {
+      background: rgba(18,25,40,0.5);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 20px;
+      padding: 1.5rem;
+      backdrop-filter: blur(5px);
+      transition: all 0.2s ease;
+      animation: fadeInUp 0.6s ease-out;
+      animation-fill-mode: both;
+    }
+    .impact-card:nth-child(1) { animation-delay: 0.1s; }
+    .impact-card:nth-child(2) { animation-delay: 0.2s; }
+    .impact-card:nth-child(3) { animation-delay: 0.3s; }
+    .impact-card:nth-child(4) { animation-delay: 0.4s; }
+    .impact-card:nth-child(5) { animation-delay: 0.5s; }
+    .impact-card:nth-child(6) { animation-delay: 0.6s; }
+    .impact-card:nth-child(7) { animation-delay: 0.7s; }
+    .impact-card:nth-child(8) { animation-delay: 0.8s; }
+    .impact-card:nth-child(9) { animation-delay: 0.9s; }
+    .impact-card:hover {
+      border-color: rgba(79,157,166,0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(79,157,166,0.2);
+    }
+    .impact-icon { font-size: 2rem; margin-bottom: 1rem; }
+    /* BADGES */
+    .badge {
+      display: inline-block;
+      background: rgba(79,157,166,0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 100px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(79,157,166,0.1);
+      transition: all 0.2s ease;
+    }
+    .badge:hover {
+      border-color: #4F9DA6;
+      box-shadow: 0 0 15px rgba(79,157,166,0.3);
+    }
+    /* DATA TICKER */
+    .data-ticker {
+      width: 100%;
+      overflow: hidden;
+      margin: 1.5rem 0;
+      padding: 0.5rem 0;
+      background: rgba(0,0,0,0.2);
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,215,0,0.2);
+      max-width: 100%;
+    }
+    .data-ticker-track {
+      display: flex;
+      gap: 2rem;
+      animation: scroll 40s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+    .data-ticker-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #FFD700;
+      font-weight: 500;
+      font-size: 0.95rem;
+      background: rgba(0,0,0,0.3);
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      border-left: 3px solid #FFD700;
+    }
+    .data-ticker-item span { color: #CBD5E0; font-weight: 400; }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    /* AGENT CARD */
+    .agent-card {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      background: rgba(18,25,40,0.7);
+      backdrop-filter: blur(8px);
+      border: 2px solid #FFD700;
+      border-radius: 16px;
+      padding: 1.5rem 2rem;
+      margin-top: 2rem;
+      margin-bottom: 0;
+      max-width: 550px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      animation: fadeInUp 1s ease-out;
+    }
+    .agent-photo {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #FFD700;
+      box-shadow: 0 0 20px rgba(255,215,0,0.2);
+    }
+    .agent-details { flex: 1; }
+    .agent-name { font-weight: 700; font-size: 1.4rem; color: white; }
+    .agent-title { color: #FFD700; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .agent-contact { font-size: 0.9rem; color: #94A3B8; line-height: 1.5; }
+    .agent-license { font-size: 0.85rem; color: #718096; margin-top: 0.25rem; }
+    @media (max-width: 640px) {
+      .agent-card { flex-direction: column; text-align: center; padding: 1.5rem; }
+      .agent-photo { width: 150px; }
+    }
+    /* STICKY CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(11,15,28,0.9);
+      backdrop-filter: blur(12px);
+      border: 1px solid #FFD700;
+      padding: 0.8rem 1.5rem;
+      border-radius: 60px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      gap: 1.5rem;
+      white-space: nowrap;
+      animation: glowPulseGold 2s infinite;
+    }
+    .sticky-cta.show { display: flex; }
+    .sticky-cta .btn-gold { padding: 0.5rem 1.5rem; font-size: 0.9rem; }
+    @keyframes glowPulseGold {
+      0% { box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 0 rgba(255,215,0,0.4); }
+      50% { box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px 5px rgba(255,215,0,0.6); }
+      100% { box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 0 rgba(255,215,0,0.4); }
+    }
+    @media (max-width: 640px) {
+      .sticky-cta { flex-wrap: wrap; justify-content: center; gap: 1rem; width: 90%; white-space: normal; border-radius: 30px; padding: 1rem; }
+    }
+    /* LOAD POPUP - FIXED HEIGHT 1200px. High z-index so initial load is above embed overlay. */
+    .load-popup {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.95);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2147483647;
+      overflow-y: auto;
+      padding: 1rem;
+    }
+    .load-popup.hidden { display: none; }
+    /* High z-index so backdrop/close work on initial form load (above embed overlay) */
+    .popup-backdrop {
+      position: absolute;
+      inset: 0;
+      z-index: 10000;
+      cursor: pointer;
+    }
+    .popup-content {
+      position: relative;
+      z-index: 10001;
+      background: #0F172A;
+      padding: 2rem;
+      border-radius: 32px;
+      max-width: 900px;
+      width: 100%;
+      border: 2px solid #FFD700;
+      box-shadow: 0 40px 70px black;
+      animation: zoomIn 0.3s ease-out;
+      margin: auto;
+    }
+    .close-popup {
+      position: absolute;
+      top: 15px; right: 20px;
+      font-size: 2.5rem;
+      cursor: pointer;
+      color: #FFD700;
+      z-index: 10002;
+      border: none;
+      font-family: inherit;
+      background: rgba(0,0,0,0.3);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      line-height: 1;
+    }
+    .close-popup:hover {
+      background: rgba(255,215,0,0.3);
+      transform: scale(1.1);
+    }
+    .popup-iframe-container {
+      width: 100%;
+      height: 1200px; /* snug fit, scrolls if needed */
+      margin: 2rem 0 1rem;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,215,0,0.3);
+      background: #0F172A;
+    }
+    .popup-iframe-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .popup-footer {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .continue-link {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid #FFD700;
+      border-radius: 40px;
+      transition: all 0.2s ease;
+    }
+    .continue-link:hover {
+      background: #FFD700;
+      color: #0B0F1C;
+    }
+    /* CALENDAR SECTION */
+    .calendar-section {
+      background: #0A0E18;
+      padding: 4rem 0;
+      text-align: center;
+    }
+    .calendar-container {
+      max-width: 900px;
+      margin: 2rem auto 0;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 2px solid #FFD700;
+    }
+    .calendar-container iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
+      display: block;
+    }
+    /* GRIDS */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 768px) {
+      .grid-3 { grid-template-columns: 1fr; }
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+    /* FOOTER */
+    footer {
+      background: #070B14;
+      padding: 4rem 0 2rem;
+      border-top: 1px solid rgba(255,215,0,0.2);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-col p, .footer-col a {
+      color: #94A3B8;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-decoration: none;
+    }
+    .footer-col a:hover {
+      color: #FFD700;
+    }
+    .footer-col strong {
+      color: #FFD700;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .social-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .social-links a:hover {
+      color: #FFD700;
+    }
+    hr { border: 0.5px solid rgba(255,255,255,0.05); margin: 2rem 0; }
+    .text-center { text-align: center; }
+    /* ANIMATIONS */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    /* mobile-specific popup adjustments */
+    @media (max-width: 600px) {
+      .popup-content {
+        padding: 1.5rem;
+      }
+      .popup-iframe-container {
+        height: 1100px; /* slightly smaller on mobile */
+      }
+      .close-popup {
+        top: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+      }
+    }
+  </style>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://bridgeport.scv123.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bridgeport.scv123.com/og-image.png"></head>
+<body>
+  <!-- Tron background lines -->
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-vertical"></div>
+  <div class="tron-line-horizontal"></div>
+  <div class="tron-line-horizontal"></div>
+  <div class="tron-line-horizontal"></div>
+
+  <!-- Cursor glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- LOAD POPUP -->
+  <div class="load-popup" id="loadPopup">
+    <div class="popup-backdrop" id="popupBackdrop" onclick="typeof window.closePopupModal === 'function' && window.closePopupModal();" role="button" aria-label="Close and continue to site" tabindex="0"></div>
+    <div class="popup-content" id="popupContent">
+      <button type="button" class="close-popup" id="closePopup" aria-label="Close and continue to site" onclick="typeof window.closePopupModal === 'function' && window.closePopupModal(); return false;">&times;</button>
+      <h2 style="color:#FFD700; text-align:center; font-size:clamp(1.5rem,4vw,2.2rem);">See What's Changing in Bridgeport</h2>
+      <p style="text-align:center; margin-bottom:1rem; color:#CBD5E0;">Enter your address for a free impact report.</p>
+      <div class="popup-iframe-container">
+        <iframe
+          src="https://api.honorelevate.com/widget/form/QAZlRzClnksdygyPtDjM"
+          style="width:100%; height:100%; border:none; border-radius:3px"
+          id="popup-iframe"
+          data-layout="{'id':'POPUP'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="bridgeport.scv123.com"
+          data-height="1497"
+          data-layout-iframe-id="popup-iframe"
+          data-form-id="QAZlRzClnksdygyPtDjM"
+          title="bridgeport.scv123.com"
+        ></iframe>
+      </div>
+      <div class="popup-footer">
+        <a href="#" id="continueToSite" class="continue-link">Continue to Site →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="domain"><a href="https://bridgeport.scv123.com" target="_blank">Bridgeport.SCV123.com</a></span>
+        <span class="tagline">Valencia's Lakeside Community — Know What Your Home Is Worth</span>
+      </div>
+      <div>
+        <a href="#" class="btn-gold" id="openPopupBtn">Get the Impact Report</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <span style="font-weight:600; color:#FFD700;">What's changing in YOUR neighborhood?</span>
+    <a href="#" class="btn-gold" id="stickyPopupBtn">Get the Data</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section style="padding-top: 1rem; padding-bottom: 2rem;">
+    <div class="bg-topography"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-video">
+          <div class="embed-container">
+            <iframe src="https://www.loom.com/embed/98914a405c35420fa77b0d0868062447" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <h1><span class="gold-highlight">Bridgeport Valencia — Your Neighborhood, Your Numbers</span></h1>
+        <p style="font-size: 1.3rem; margin: 1.5rem 0; color: #CBD5E0;">Lake community. Top-rated schools. Strong resale. Here's what's actually happening to home values in Bridgeport right now.</p>
+        <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #A0AEC0;">One report shows how everything happening in Santa Clarita impacts your home's value.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+          <span class="badge">🏘️ Bridgeport HOA Insights</span>
+          <span class="badge">🏫 Bridgeport Elementary Data</span>
+          <span class="badge">💧 Lakeside Premium Value</span>
+        </div>
+        <div class="data-ticker">
+          <div class="data-ticker-track">
+            <span class="data-ticker-item">💰 <span>Bridgeport Recent Sale Prices</span></span>
+            <span class="data-ticker-item">🏗️ <span>New Valencia Construction Impact</span></span>
+            <span class="data-ticker-item">🏫 <span>School Rating Trends</span></span>
+            <span class="data-ticker-item">💧 <span>Lake Community Premium</span></span>
+            <span class="data-ticker-item">🚗 <span>McBean Pkwy Traffic Data</span></span>
+            <span class="data-ticker-item">🛍️ <span>Bridgeport Marketplace Walkability</span></span>
+            <span class="data-ticker-item">🏚️ <span>Distressed Bridgeport Listings</span></span>
+            <span class="data-ticker-item">🚫 <span>Expired Listings in Bridgeport</span></span>
+            <span class="data-ticker-item">❌ <span>Cancelled Bridgeport Sales</span></span>
+            <span class="data-ticker-item">📈 <span>Price Per Sq Ft Trends</span></span>
+            <span class="data-ticker-item">🤝 <span>HOA Fee Impact on Value</span></span>
+            <span class="data-ticker-item">➕ <span>and more</span></span>
+            <span class="data-ticker-item">💰 <span>Bridgeport Recent Sale Prices</span></span>
+            <span class="data-ticker-item">🏗️ <span>New Valencia Construction Impact</span></span>
+            <span class="data-ticker-item">🏫 <span>School Rating Trends</span></span>
+            <span class="data-ticker-item">💧 <span>Lake Community Premium</span></span>
+            <span class="data-ticker-item">🚗 <span>McBean Pkwy Traffic Data</span></span>
+            <span class="data-ticker-item">🛍️ <span>Bridgeport Marketplace Walkability</span></span>
+            <span class="data-ticker-item">🏚️ <span>Distressed Bridgeport Listings</span></span>
+            <span class="data-ticker-item">🚫 <span>Expired Listings in Bridgeport</span></span>
+            <span class="data-ticker-item">❌ <span>Cancelled Bridgeport Sales</span></span>
+            <span class="data-ticker-item">📈 <span>Price Per Sq Ft Trends</span></span>
+            <span class="data-ticker-item">🤝 <span>HOA Fee Impact on Value</span></span>
+            <span class="data-ticker-item">➕ <span>and more</span></span>
+          </div>
+        </div>
+        <div class="agent-card">
+          <img src="https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png" alt="Connor T. MacIvor, Exclusive Sellers Realtor" class="agent-photo">
+          <div class="agent-details">
+            <div class="agent-name">Connor T. MacIvor</div>
+            <div class="agent-title">Exclusive Sellers Realtor</div>
+            <div class="agent-contact">661-400-1720<br>25060 Avenue Stanford Suite 150, Valencia CA 91355</div>
+            <div class="agent-license">CALDRE #01238257 | SYNC Brokerage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Factors -->
+  <section style="background:#0A0E18;">
+    <div class="bg-topography"></div>
+    <div class="container">
+      <h2 class="text-center">7 forces shaping Bridgeport home values right now.</h2>
+      <p class="text-center" style="max-width:700px; margin:0 auto 3rem; color:#A0AEC0;">We aggregate public data, city plans, traffic studies, and crime stats to show you what's really happening in your part of SCV.</p>
+      <div class="grid-3">
+        <div class="impact-card"><div class="impact-icon">🏗️</div><h3>New Valencia Construction</h3><p>2,300+ units planned nearby. How supply impacts Bridgeport scarcity and your price.</p></div>
+        <div class="impact-card"><div class="impact-icon">💧</div><h3>Lake Community Premium</h3><p>Waterfront and greenbelt-adjacent homes command measurable premiums. We track the spread.</p></div>
+        <div class="impact-card"><div class="impact-icon">🏫</div><h3>School Zone Value</h3><p>Bridgeport Elementary is one of Saugus Union's top-rated schools. How ratings move prices.</p></div>
+        <div class="impact-card"><div class="impact-icon">🛍️</div><h3>Bridgeport Marketplace</h3><p>Walkable retail within the community. Livability scores and buyer demand correlation.</p></div>
+        <div class="impact-card"><div class="impact-icon">🚗</div><h3>McBean Pkwy Traffic</h3><p>Commute patterns, signal changes, freeway access. How connectivity affects desirability.</p></div>
+        <div class="impact-card"><div class="impact-icon">🏘️</div><h3>HOA Health & Fees</h3><p>HOA financials, reserve funds, and fee trends directly impact net buyer purchasing power.</p></div>
+        <div class="impact-card"><div class="impact-icon">📊</div><h3>Crime & Safety Data</h3><p>SCV Sheriff data by neighborhood. Bridgeport's safety profile vs. surrounding communities.</p></div>
+        <div class="impact-card"><div class="impact-icon">📈</div><h3>Price Per Sq Ft Shifts</h3><p>Not averages — micro-neighborhood price movement within Bridgeport's specific tracts.</p></div>
+        <div class="impact-card"><div class="impact-icon">🎯</div><h3>Strategic Buyer Matching</h3><p>We identify and match your home with qualified buyers before the MLS. Private, targeted, effective.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bridge Strategy -->
+  <section style="background:#0B0F1C;">
+    <div class="bg-topography"></div>
+    <div class="container">
+      <div class="grid-2" style="align-items: center;">
+        <div style="text-align: center;">
+          <div style="font-size: 8rem; line-height: 1; color: #FFD700; text-shadow: 0 0 30px #FFD700, 0 0 60px #FFD700; animation: fadeInUp 0.8s ease-out;">🤝</div>
+          <p style="color: #4F9DA6; font-weight: 600; letter-spacing: 2px; margin-top: -0.5rem;">EXCLUSIVE ACCESS</p>
+        </div>
+        <div>
+          <h2 style="margin-bottom: 0.5rem;">The Bridgeport Bridge Strategy</h2>
+          <h3 style="color:#FFD700; font-size: 1.8rem; margin-bottom: 1.5rem;">Sell Without the Circus.</h3>
+          <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color:#4F9DA6; font-size: 1.5rem;">✓</span> <strong>Zero Prep</strong> – No staging, no repairs, no open houses.</li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color:#4F9DA6; font-size: 1.5rem;">✓</span> <strong>Total Privacy</strong> – Your home never hits the MLS; no yard sign.</li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color:#4F9DA6; font-size: 1.5rem;">✓</span> <strong>No‑Hassle Entry Point</strong> – Test the market with zero commitment.</li>
+          </ul>
+          <p style="margin-bottom: 2rem; color: #CBD5E0;">We pair your home with a specific qualified buyer through a Single Party Compensation Agreement. It's off‑market, exclusive, and built on trust.</p>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="#" class="btn-gold" id="bridgeStrategyBtn" onclick="document.getElementById('loadPopup').classList.remove('hidden'); return false;">Learn the Bridge Strategy</a>
+            <a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="border-color:rgba(79,157,166,0.8); color:#9ADBE8;">Why Sellers Only? →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Sellers-Only -->
+  <section>
+    <div class="container">
+      <div class="grid-2" style="align-items: center;">
+        <div>
+          <h2>Why a sellers-only agent?</h2>
+          <p style="font-size:1.2rem; margin-bottom:1.5rem;">Because your equity deserves undivided loyalty.</p>
+          <div style="background:rgba(255,215,0,0.06); border:1px solid rgba(255,215,0,0.25); border-radius:16px; padding:1.25rem 1.5rem; margin-bottom:2rem;">
+            <p style="font-size:0.9rem; text-transform:uppercase; letter-spacing:1px; color:#FFD700; font-weight:600; margin-bottom:0.5rem;">The elephant in the room</p>
+            <p style="margin-bottom:0.75rem;">Some agents will say a sellers-only model means fewer buyers or that you need someone who "does both sides." Here's the truth: I worked with home buyers for 21 years and I still work with buyers on every one of my listings — but since 2021 I've always been on the seller's side.</p>
+            <p style="margin-bottom:0;">I see what buyers want and what they ask for. I also see how, when the same agent represents both sides, there's a different kind of advantage taken — one that doesn't exist in a sellers-only model. Your side stays clear. So yes: a sellers-only agent is good for sellers.</p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap:1.5rem;">
+            <div style="display: flex; gap:1rem;"><span style="color:#4F9DA6; font-size:1.5rem;">✓</span><div><strong>No dual agency – ever.</strong> I never represent buyers. If a buyer contacts me directly, I refer them to a dedicated <strong>Buyer-Only specialist</strong> from my vetted network. Your interests stay 100% protected.</div></div>
+            <div style="display: flex; gap:1rem;"><span style="color:#4F9DA6; font-size:1.5rem;">✓</span><div><strong>Hostile vetting environment.</strong> Your home is shown only to qualified buyers represented by their own agent. That agent must bring their best offer, knowing I'm 100% on your side.</div></div>
+            <div style="display: flex; gap:1rem;"><span style="color:#4F9DA6; font-size:1.5rem;">✓</span><div><strong>Exclusive Buyer-Agent Network.</strong> I've built a network of trusted buyer-only agents who handle all showings and negotiations with buyers. Your loyalty is never divided.</div></div>
+          </div>
+          <a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" class="btn-gold btn-gold-large" style="margin-top:1.5rem; box-shadow:0 0 25px rgba(255,215,0,0.4);">Explore the Sellers-Only Philosophy →</a>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:stretch; gap:1.25rem;">
+          <a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" style="display:block; width:100%; line-height:0;">
+            <img src="assets/sellers-only-logo.png" alt="Sellers Only Agent — 100% Seller Loyalty" style="width:100%; height:auto; border-radius:24px; border:1px solid rgba(79,157,166,0.2); display:block;" loading="lazy">
+          </a>
+          <div style="background:rgba(79,157,166,0.1); padding:2rem; border-radius:24px; border:1px solid rgba(79,157,166,0.2);">
+            <p style="font-size:2rem; font-weight:700; margin-bottom:1rem;">100%</p>
+            <p style="font-size:1.2rem;">of my business is sellers-only. No exceptions. That's the "Honor" in Connor with Honor.</p>
+            <a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="margin-top:1.25rem; display:inline-block;">Sellers-Only Philosophy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendar -->
+  <section class="calendar-section">
+    <div class="container">
+      <h2 style="color:#FFD700;">Book a Strategy Call</h2>
+      <p style="font-size:1.2rem; max-width:600px; margin:1rem auto;">Get 15 minutes with Connor to discuss your home's potential.</p>
+      <div class="calendar-container">
+        <iframe 
+          src="https://api.honorelevate.com/widget/booking/sMwNSzPnGoniBv3yatCI" 
+          style="width:100%; height:700px; border:none; overflow:hidden;" 
+          scrolling="no" 
+          id="Z8jnI8EmlhCCe7s59AeT_1771474780654"
+          title="Booking Calendar"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <strong>Connor T. MacIvor</strong>
+          <p><a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" style="color:#FFD700;">Sellers-Only Philosophy → SellersOnlyAgent.com</a></p>
+          <p>CALDRE #01238257<br>SYNC Brokerage</p>
+          <p>25060 Avenue Stanford, Suite 150<br>Valencia, CA 91355</p>
+          <p><a href="tel:6614001720" target="_blank">661-400-1720</a></p>
+          <p><a href="mailto:connor@SantaClaritaOpenHouses.com" target="_blank">connor@SantaClaritaOpenHouses.com</a></p>
+          <p><a href="https://www.SantaClaritaOpenHouses.com" target="_blank">SantaClaritaOpenHouses.com</a></p>
+          <p style="font-style: italic; margin-top:1rem; font-weight:700;">If your home is currently listed for sale this is not a solicitation.</p>
+        </div>
+        <div class="footer-col">
+          <strong>Connect</strong>
+          <div class="social-links">
+            <a href="https://facebook.com/santaclaritaopenhouses" target="_blank">Facebook</a>
+            <a href="https://x.com/connorwithhonor" target="_blank">X</a>
+            <a href="https://tiktok.com/@santaclaritaopenhouses" target="_blank">TikTok</a>
+            <a href="https://instagram.com/santaclaritaopenhouses" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/company/santaclaritaopenhouses" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <strong>Legal</strong>
+          <p><a href="https://bridgeport.scv123.com/privacy-policy" target="_blank">Privacy Policy</a></p>
+          <p><a href="https://bridgeport.scv123.com/terms-of-service" target="_blank">Terms of Service</a></p>
+          <p>© 2026 Honor Elevate</p>
+        </div>
+      </div>
+      <p style="text-align:center;"><a href="https://honorelevate.com" target="_blank" style="color:#4F9DA6;">Coded by Connor with Honor | AI Growth Architect</a></p>
+      <hr>
+      <p style="text-align:center; color:#4A5568;">Data sourced from public records and city planning.</p>
+    </div>
+  </footer>
+
+  <!-- Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:YOUR_HOTJAR_ID, hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+
+  <script src="https://api.honorelevate.com/js/form_embed.js"></script>
+  <script>
+    (function() {
+      const cursorGlow = document.getElementById('cursor-glow');
+      if (cursorGlow) {
+        document.addEventListener('mousemove', (e) => {
+          cursorGlow.style.opacity = '1';
+          cursorGlow.style.left = e.clientX + 'px';
+          cursorGlow.style.top = e.clientY + 'px';
+        });
+        document.addEventListener('mouseleave', () => {
+          cursorGlow.style.opacity = '0';
+        });
+      }
+
+      const loadPopup = document.getElementById('loadPopup');
+      const closePopup = document.getElementById('closePopup');
+      const continueLink = document.getElementById('continueToSite');
+      const openPopupBtn = document.getElementById('openPopupBtn');
+      const stickyPopupBtn = document.getElementById('stickyPopupBtn');
+      const bridgeStrategyBtn = document.getElementById('bridgeStrategyBtn');
+
+      function showPopup() {
+        loadPopup.classList.remove('hidden');
+      }
+      function hidePopup() {
+        loadPopup.classList.add('hidden');
+        sessionStorage.setItem('popupShown', 'true');
+      }
+      window.closePopupModal = hidePopup;
+
+      if (closePopup) {
+        closePopup.addEventListener('click', hidePopup);
+        closePopup.addEventListener('touchstart', hidePopup, { passive: true });
+      }
+      if (continueLink) {
+        continueLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          hidePopup();
+        });
+      }
+      const popupBackdrop = document.getElementById('popupBackdrop');
+      if (popupBackdrop) {
+        popupBackdrop.addEventListener('click', hidePopup);
+        popupBackdrop.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); hidePopup(); } });
+      }
+      if (openPopupBtn) {
+        openPopupBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          showPopup();
+        });
+      }
+      if (stickyPopupBtn) {
+        stickyPopupBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          showPopup();
+        });
+      }
+      if (bridgeStrategyBtn) {
+        bridgeStrategyBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          showPopup();
+        });
+      }
+
+      if (!sessionStorage.getItem('popupShown')) {
+        setTimeout(() => {
+          showPopup();
+        }, 2000);
+      }
+
+      const sticky = document.getElementById('stickyCta');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) {
+          sticky.classList.add('show');
+        } else {
+          sticky.classList.remove('show');
+        }
+      });
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const source = urlParams.get('source') || 'direct';
+
+      const popupIframe = document.getElementById('popup-iframe');
+      if (popupIframe) {
+        let src = popupIframe.src;
+        if (src.indexOf('?') === -1) {
+          src += '?source=' + encodeURIComponent(source);
+        } else {
+          src += '&source=' + encodeURIComponent(source);
+        }
+        popupIframe.src = src;
+      }
+    })();
+  </script>
+</body>
+</html>

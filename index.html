@@ -1,995 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Bridgeport Valencia CA | Neighborhood Market Intelligence | SCV123</title>
-  <meta name="description" content="Bridgeport Valencia real estate — market trends, home values, lakeside community insights. Connor MacIvor, your Bridgeport neighborhood specialist.">
-  <link rel="canonical" href="https://bridgeport.scv123.com">
-  <meta name="robots" content="index, follow">
-  <link rel="icon" href="assets/favicon.png" type="image/png">
-  <link rel="apple-touch-icon" href="assets/favicon.png">
-  <!-- Schema Markup -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Connor T. MacIvor",
-    "image": "https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png",
-    "url": "https://bridgeport.scv123.com",
-    "telephone": "+16614001720",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "25060 Avenue Stanford Suite 150",
-      "addressLocality": "Valencia",
-      "addressRegion": "CA",
-      "postalCode": "91355",
-      "addressCountry": "US"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Bridgeport, Valencia",
-      "containedInPlace": "Santa Clarita Valley"
-    },
-    "description": "Bridgeport Valencia neighborhood real estate specialist. Sellers-only representation. AI-powered local market intelligence. Exclusive buyer-agent network.",
-    "knowsAbout": ["Real estate", "Sellers-only agent", "Off-market listings", "Bridgeport HOA", "Lake community premium"],
-    "hasCredential": "CALDRE #01238257",
-    "affiliation": {
-      "@type": "Organization",
-      "name": "SYNC Brokerage"
-    }
-  }
-  </script>
-  <!-- FAQ Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the Bridgeport Bridge Strategy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It's an off-market approach where we match your home with a qualified buyer before it ever hits the MLS. No open houses, no yard sign, no prep work—just a private, respectful transaction. You get to test the market with zero commitment."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why work with a sellers-only agent?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "I never represent buyers. If a buyer contacts me directly, I refer them to a dedicated buyer-only specialist from my vetted network. This creates a hostile vetting environment where the buyer's agent must bring their best offer, knowing I'm 100% on your side."
-        }
-      }
-    ]
-  }
-  </script>
-  <!-- Preload fonts -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #0B0F1C;
-      color: #EDF2F7;
-      line-height: 1.5;
-      font-size: 16px;
-      overflow-x: hidden;
-      position: relative;
-      min-height: 100vh;
-    }
-    /* TRON BACKGROUND LINES */
-    .tron-line-vertical, .tron-line-horizontal {
-      position: fixed;
-      background: linear-gradient(180deg, transparent, #4F9DA6, transparent);
-      box-shadow: 0 0 15px #4F9DA6;
-      z-index: 0;
-      opacity: 0.25;
-      pointer-events: none;
-    }
-    .tron-line-vertical {
-      top: 0;
-      width: 2px;
-      height: 0;
-      animation: tron-fall 8s infinite ease-in-out;
-    }
-    .tron-line-vertical:nth-child(1) { left: 10%; animation-duration: 8s; }
-    .tron-line-vertical:nth-child(2) { left: 30%; animation-duration: 12s; animation-delay: 2s; width: 1px; }
-    .tron-line-vertical:nth-child(3) { left: 70%; animation-duration: 10s; animation-delay: 1s; width: 1.5px; }
-    .tron-line-vertical:nth-child(4) { left: 90%; animation-duration: 15s; animation-delay: 3s; width: 1px; }
-    .tron-line-horizontal {
-      left: 0;
-      height: 2px;
-      width: 0;
-      background: linear-gradient(90deg, transparent, #4F9DA6, transparent);
-      animation: tron-scan 10s infinite linear;
-    }
-    .tron-line-horizontal:nth-child(5) { top: 20%; animation-duration: 14s; }
-    .tron-line-horizontal:nth-child(6) { top: 50%; animation-duration: 18s; animation-delay: 3s; height: 1.5px; }
-    .tron-line-horizontal:nth-child(7) { top: 80%; animation-duration: 12s; animation-delay: 6s; height: 1px; }
-    @keyframes tron-fall {
-      0% { top: -10%; height: 0; opacity: 0; }
-      20% { opacity: 0.4; }
-      50% { top: 50%; height: 60%; opacity: 0.3; }
-      80% { opacity: 0.4; }
-      100% { top: 110%; height: 0; opacity: 0; }
-    }
-    @keyframes tron-scan {
-      0% { left: -10%; width: 0; opacity: 0; }
-      20% { opacity: 0.4; }
-      50% { left: 25%; width: 50%; opacity: 0.3; }
-      80% { opacity: 0.4; }
-      100% { left: 110%; width: 0; opacity: 0; }
-    }
-    /* CURSOR GLOW */
-    #cursor-glow {
-      position: fixed;
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle at center, rgba(79,157,166,0.12) 0%, transparent 70%);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      mix-blend-mode: screen;
-    }
-    /* HEADER */
-    .site-header {
-      padding: 1.5rem 0;
-      border-bottom: 1px solid rgba(79,157,166,0.2);
-      background: rgba(11,15,28,0.8);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      width: 90%;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .logo-area {
-      display: flex;
-      align-items: baseline;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    .domain a {
-      font-size: 1.8rem;
-      font-weight: 800;
-      background: linear-gradient(135deg, #FFFFFF, #9ADBE8);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-decoration: none;
-    }
-    .domain a:hover {
-      text-decoration: underline;
-      text-underline-offset: 4px;
-    }
-    .tagline {
-      color: #94A3B8;
-      font-weight: 400;
-      font-size: 1rem;
-    }
-    /* GOLD HIGHLIGHT & BUTTONS */
-    .gold-highlight { color: #FFD700; font-weight: 800; }
-    .btn-gold {
-      display: inline-block;
-      background: transparent;
-      color: #FFD700;
-      font-weight: 700;
-      padding: 0.8rem 2rem;
-      border-radius: 40px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      border: 2px solid #FFD700;
-      cursor: pointer;
-      font-size: 1rem;
-      box-shadow: 0 0 15px rgba(255,215,0,0.3);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .btn-gold:hover {
-      background: #FFD700;
-      color: #0B0F1C;
-      box-shadow: 0 0 30px rgba(255,215,0,0.6);
-      transform: translateY(-2px);
-    }
-    .btn-gold-large { font-size: 1.2rem; padding: 1.2rem 3rem; }
-    /* TYPOGRAPHY */
-    h1, h2, h3 { font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
-    h1 {
-      font-size: clamp(2.2rem, 6vw, 4rem);
-      font-weight: 800;
-      animation: fadeInUp 0.8s ease-out;
-    }
-    h2 {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      margin-bottom: 1.5rem;
-      background: linear-gradient(135deg, #FFFFFF 0%, #B0E0E6 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .container {
-      width: 90%;
-      max-width: 1280px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 10;
-    }
-    section { padding: 5rem 0; position: relative; z-index: 5; }
-    .bg-topography {
-      position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.8 30 L60 30 M30 5.2 L30 0 M5.2 30 L0 30 M30 54.8 L30 60' stroke='rgba(79,157,166,0.2)' stroke-width='0.5' fill='none' /%3E%3C/svg%3E");
-      opacity: 0.4;
-      pointer-events: none;
-      z-index: 0;
-    }
-    /* HERO CONTENT */
-    .hero-content {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    /* Hero video embed */
-    .hero-video {
-      width: 100%;
-      max-width: 700px;
-      margin: 0 auto 2rem auto;
-      display: block;
-      border-radius: 20px;
-      border: 2px solid rgba(255,215,0,0.3);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-      overflow: hidden;
-      background: #000;
-    }
-    .hero-video .embed-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #000;
-    }
-    .hero-video .embed-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    /* IMPACT CARDS */
-    .impact-card {
-      background: rgba(18,25,40,0.5);
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 20px;
-      padding: 1.5rem;
-      backdrop-filter: blur(5px);
-      transition: all 0.2s ease;
-      animation: fadeInUp 0.6s ease-out;
-      animation-fill-mode: both;
-    }
-    .impact-card:nth-child(1) { animation-delay: 0.1s; }
-    .impact-card:nth-child(2) { animation-delay: 0.2s; }
-    .impact-card:nth-child(3) { animation-delay: 0.3s; }
-    .impact-card:nth-child(4) { animation-delay: 0.4s; }
-    .impact-card:nth-child(5) { animation-delay: 0.5s; }
-    .impact-card:nth-child(6) { animation-delay: 0.6s; }
-    .impact-card:nth-child(7) { animation-delay: 0.7s; }
-    .impact-card:nth-child(8) { animation-delay: 0.8s; }
-    .impact-card:nth-child(9) { animation-delay: 0.9s; }
-    .impact-card:hover {
-      border-color: rgba(79,157,166,0.4);
-      transform: translateY(-3px);
-      box-shadow: 0 0 20px rgba(79,157,166,0.2);
-    }
-    .impact-icon { font-size: 2rem; margin-bottom: 1rem; }
-    /* BADGES */
-    .badge {
-      display: inline-block;
-      background: rgba(79,157,166,0.2);
-      padding: 0.5rem 1rem;
-      border-radius: 100px;
-      font-size: 0.875rem;
-      font-weight: 500;
-      backdrop-filter: blur(5px);
-      border: 1px solid rgba(79,157,166,0.1);
-      transition: all 0.2s ease;
-    }
-    .badge:hover {
-      border-color: #4F9DA6;
-      box-shadow: 0 0 15px rgba(79,157,166,0.3);
-    }
-    /* DATA TICKER */
-    .data-ticker {
-      width: 100%;
-      overflow: hidden;
-      margin: 1.5rem 0;
-      padding: 0.5rem 0;
-      background: rgba(0,0,0,0.2);
-      border-radius: 40px;
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(255,215,0,0.2);
-      max-width: 100%;
-    }
-    .data-ticker-track {
-      display: flex;
-      gap: 2rem;
-      animation: scroll 40s linear infinite;
-      white-space: nowrap;
-      width: max-content;
-    }
-    .data-ticker-item {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: #FFD700;
-      font-weight: 500;
-      font-size: 0.95rem;
-      background: rgba(0,0,0,0.3);
-      padding: 0.4rem 1rem;
-      border-radius: 40px;
-      border-left: 3px solid #FFD700;
-    }
-    .data-ticker-item span { color: #CBD5E0; font-weight: 400; }
-    @keyframes scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    /* AGENT CARD */
-    .agent-card {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      background: rgba(18,25,40,0.7);
-      backdrop-filter: blur(8px);
-      border: 2px solid #FFD700;
-      border-radius: 16px;
-      padding: 1.5rem 2rem;
-      margin-top: 2rem;
-      margin-bottom: 0;
-      max-width: 550px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-      animation: fadeInUp 1s ease-out;
-    }
-    .agent-photo {
-      width: 120px;
-      height: auto;
-      border-radius: 8px;
-      border: 2px solid #FFD700;
-      box-shadow: 0 0 20px rgba(255,215,0,0.2);
-    }
-    .agent-details { flex: 1; }
-    .agent-name { font-weight: 700; font-size: 1.4rem; color: white; }
-    .agent-title { color: #FFD700; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .agent-contact { font-size: 0.9rem; color: #94A3B8; line-height: 1.5; }
-    .agent-license { font-size: 0.85rem; color: #718096; margin-top: 0.25rem; }
-    @media (max-width: 640px) {
-      .agent-card { flex-direction: column; text-align: center; padding: 1.5rem; }
-      .agent-photo { width: 150px; }
-    }
-    /* STICKY CTA */
-    .sticky-cta {
-      position: fixed;
-      bottom: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(11,15,28,0.9);
-      backdrop-filter: blur(12px);
-      border: 1px solid #FFD700;
-      padding: 0.8rem 1.5rem;
-      border-radius: 60px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      z-index: 1000;
-      display: none;
-      align-items: center;
-      gap: 1.5rem;
-      white-space: nowrap;
-      animation: glowPulseGold 2s infinite;
-    }
-    .sticky-cta.show { display: flex; }
-    .sticky-cta .btn-gold { padding: 0.5rem 1.5rem; font-size: 0.9rem; }
-    @keyframes glowPulseGold {
-      0% { box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 0 rgba(255,215,0,0.4); }
-      50% { box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px 5px rgba(255,215,0,0.6); }
-      100% { box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 0 0 rgba(255,215,0,0.4); }
-    }
-    @media (max-width: 640px) {
-      .sticky-cta { flex-wrap: wrap; justify-content: center; gap: 1rem; width: 90%; white-space: normal; border-radius: 30px; padding: 1rem; }
-    }
-    /* LOAD POPUP - FIXED HEIGHT 1200px. High z-index so initial load is above embed overlay. */
-    .load-popup {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.95);
-      backdrop-filter: blur(8px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 2147483647;
-      overflow-y: auto;
-      padding: 1rem;
-    }
-    .load-popup.hidden { display: none; }
-    /* High z-index so backdrop/close work on initial form load (above embed overlay) */
-    .popup-backdrop {
-      position: absolute;
-      inset: 0;
-      z-index: 10000;
-      cursor: pointer;
-    }
-    .popup-content {
-      position: relative;
-      z-index: 10001;
-      background: #0F172A;
-      padding: 2rem;
-      border-radius: 32px;
-      max-width: 900px;
-      width: 100%;
-      border: 2px solid #FFD700;
-      box-shadow: 0 40px 70px black;
-      animation: zoomIn 0.3s ease-out;
-      margin: auto;
-    }
-    .close-popup {
-      position: absolute;
-      top: 15px; right: 20px;
-      font-size: 2.5rem;
-      cursor: pointer;
-      color: #FFD700;
-      z-index: 10002;
-      border: none;
-      font-family: inherit;
-      background: rgba(0,0,0,0.3);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.2s ease;
-      line-height: 1;
-    }
-    .close-popup:hover {
-      background: rgba(255,215,0,0.3);
-      transform: scale(1.1);
-    }
-    .popup-iframe-container {
-      width: 100%;
-      height: 1200px; /* snug fit, scrolls if needed */
-      margin: 2rem 0 1rem;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(255,215,0,0.3);
-      background: #0F172A;
-    }
-    .popup-iframe-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      display: block;
-    }
-    .popup-footer {
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-    }
-    .continue-link {
-      color: #FFD700;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 0.5rem 1.5rem;
-      border: 1px solid #FFD700;
-      border-radius: 40px;
-      transition: all 0.2s ease;
-    }
-    .continue-link:hover {
-      background: #FFD700;
-      color: #0B0F1C;
-    }
-    /* CALENDAR SECTION */
-    .calendar-section {
-      background: #0A0E18;
-      padding: 4rem 0;
-      text-align: center;
-    }
-    .calendar-container {
-      max-width: 900px;
-      margin: 2rem auto 0;
-      border-radius: 24px;
-      overflow: hidden;
-      border: 2px solid #FFD700;
-    }
-    .calendar-container iframe {
-      width: 100%;
-      height: 700px;
-      border: none;
-      display: block;
-    }
-    /* GRIDS */
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-    }
-    @media (max-width: 768px) {
-      .grid-3 { grid-template-columns: 1fr; }
-    }
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-    }
-    @media (max-width: 768px) {
-      .grid-2 { grid-template-columns: 1fr; }
-    }
-    /* FOOTER */
-    footer {
-      background: #070B14;
-      padding: 4rem 0 2rem;
-      border-top: 1px solid rgba(255,215,0,0.2);
-    }
-    .footer-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 3rem;
-      margin-bottom: 3rem;
-    }
-    .footer-col p, .footer-col a {
-      color: #94A3B8;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      text-decoration: none;
-    }
-    .footer-col a:hover {
-      color: #FFD700;
-    }
-    .footer-col strong {
-      color: #FFD700;
-      font-weight: 600;
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-    .social-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .social-links a {
-      color: #94A3B8;
-      text-decoration: none;
-      font-size: 0.9rem;
-    }
-    .social-links a:hover {
-      color: #FFD700;
-    }
-    hr { border: 0.5px solid rgba(255,255,255,0.05); margin: 2rem 0; }
-    .text-center { text-align: center; }
-    /* ANIMATIONS */
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInRight {
-      from { opacity: 0; transform: translateX(30px); }
-      to { opacity: 1; transform: translateX(0); }
-    }
-    @keyframes zoomIn {
-      from { opacity: 0; transform: scale(0.9); }
-      to { opacity: 1; transform: scale(1); }
-    }
-    /* mobile-specific popup adjustments */
-    @media (max-width: 600px) {
-      .popup-content {
-        padding: 1.5rem;
-      }
-      .popup-iframe-container {
-        height: 1100px; /* slightly smaller on mobile */
-      }
-      .close-popup {
-        top: 10px;
-        right: 10px;
-        width: 40px;
-        height: 40px;
-        font-size: 2rem;
-      }
-    }
-  </style>
-<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://bridgeport.scv123.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bridgeport.scv123.com/og-image.png"></head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bridgeport Valencia | The Report Card | Connor MacIvor</title>
+<meta name="description" content="40 Bridgeport homes listed in the last 12 months. 23 sold in a median of 27 days. 17 sat 104 days and never closed. Same tract. Same buyers. Different outcomes. The Bridgeport Report Card from Connor MacIvor, Sellers Only Agent.">
+<link rel="canonical" href="https://bridgeport.scv123.com">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bridgeport Valencia: The Report Card">
+<meta property="og:description" content="23 sold. 17 didn't. Same tract. Same buyers. Different outcomes.">
+<meta property="og:url" content="https://bridgeport.scv123.com">
+<meta property="og:image" content="https://bridgeport.scv123.com/assets/bridgeport-lighthouse.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bridgeport Valencia: The Report Card">
+<meta name="twitter:description" content="23 sold. 17 didn't. Same tract. Same buyers. Different outcomes.">
+<meta name="twitter:image" content="https://bridgeport.scv123.com/assets/bridgeport-lighthouse.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RealEstateAgent",
+  "name": "Connor T. MacIvor",
+  "image": "https://bridgeport.scv123.com/assets/bridgeport-lighthouse.jpg",
+  "url": "https://bridgeport.scv123.com",
+  "telephone": "+16614001720",
+  "email": "connor@scv123.com",
+  "priceRange": "$$",
+  "address": {"@type": "PostalAddress","streetAddress": "23321 Beachcomber Lane","addressLocality": "Valencia","addressRegion": "CA","postalCode": "91355","addressCountry": "US"},
+  "areaServed": {"@type": "Place","name": "Bridgeport, Valencia, Santa Clarita Valley"},
+  "description": "Bridgeport Valencia neighborhood specialist. Sellers-only representation. $17,000 flat fee. 27+ years SCV real estate. 23 years law enforcement.",
+  "knowsAbout": ["Real estate","Sellers-only representation","Bridgeport HOA","Lake-view premium pricing","Santa Clarita Valley"],
+  "hasCredential": "CALDRE #01238257",
+  "affiliation": {"@type": "Organization","name": "SYNC Brokerage"}
+}
+</script>
+
+<style>
+:root{--ink:#0f1d2c;--ink-soft:#2a3947;--paper:#fafaf7;--paper-warm:#f3eee5;--sea:#1d4d6b;--sea-deep:#0e2a3c;--sand:#c4a47c;--gold:#b8843e;--red:#b53939;--green:#2c7a4e;--rule:#d8d2c4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+.wrap-narrow{max-width:760px;margin:0 auto;padding:0 1.5rem}
+
+.hero{position:relative;min-height:92vh;background:linear-gradient(180deg,rgba(14,42,60,.55) 0%,rgba(14,42,60,.85) 100%),url("assets/bridgeport-lighthouse.jpg") center/cover no-repeat;color:#fff;display:flex;align-items:center;padding:4rem 0 3rem}
+.hero-inner{width:100%}
+.hero-eyebrow{font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);margin-bottom:1.2rem;font-weight:600}
+.hero h1{font-size:clamp(2.4rem,5.5vw,4.4rem);line-height:1.05;font-weight:800;letter-spacing:-.02em;margin-bottom:1.6rem;max-width:22ch}
+.hero h1 .accent{color:var(--sand)}
+.hero-sub{font-size:clamp(1.1rem,1.6vw,1.35rem);max-width:60ch;margin-bottom:2.2rem;color:#f0e9da}
+.hero-stats{display:flex;gap:2.5rem;flex-wrap:wrap;margin-bottom:2.4rem;padding:1.5rem 0;border-top:1px solid rgba(255,255,255,.18);border-bottom:1px solid rgba(255,255,255,.18);max-width:760px}
+.hero-stat .num{font-size:2.4rem;font-weight:800;display:block;color:#fff;line-height:1}
+.hero-stat .lab{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand);margin-top:.4rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+.btn{display:inline-block;padding:1rem 1.8rem;border-radius:4px;font-weight:700;text-decoration:none;font-size:1rem;letter-spacing:.02em;transition:transform .15s ease,box-shadow .15s ease;border:0;cursor:pointer;font-family:inherit}
+.btn-primary{background:var(--sand);color:var(--ink)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.btn-secondary{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
+.btn-secondary:hover{background:rgba(255,255,255,.1)}
+.hero-fineprint{font-size:.85rem;color:rgba(255,255,255,.7);margin-top:1.2rem;max-width:50ch}
+
+section{padding:5rem 0}
+section.tight{padding:3.5rem 0}
+.section-eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sea);font-weight:700;margin-bottom:.9rem}
+.section-h2{font-size:clamp(1.8rem,3.5vw,2.6rem);line-height:1.15;font-weight:800;letter-spacing:-.01em;color:var(--ink);margin-bottom:1.2rem;max-width:24ch}
+.section-lead{font-size:1.15rem;color:var(--ink-soft);max-width:60ch;margin-bottom:2.5rem}
+.divider-thin{height:1px;background:var(--rule);margin:0}
+
+.contrast{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--rule);background:#fff;border-radius:8px;overflow:hidden}
+.contrast-col{padding:2.5rem 2rem}
+.contrast-col + .contrast-col{border-left:1px solid var(--rule)}
+.contrast-col.sold{background:#f4f9f5}
+.contrast-col.failed{background:#fdf6f5}
+.contrast-label{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:1rem}
+.contrast-col.sold .contrast-label{color:var(--green)}
+.contrast-col.failed .contrast-label{color:var(--red)}
+.contrast-bignum{font-size:4.2rem;font-weight:800;line-height:1;letter-spacing:-.03em;margin-bottom:.5rem;color:var(--ink)}
+.contrast-tag{font-size:1rem;color:var(--ink-soft);margin-bottom:1.5rem}
+.contrast-stats{list-style:none}
+.contrast-stats li{padding:.7rem 0;border-top:1px dashed var(--rule);display:flex;justify-content:space-between;font-size:.95rem}
+.contrast-stats li:first-child{border-top:0}
+.contrast-stats .k{color:var(--ink-soft)}
+.contrast-stats .v{font-weight:700;color:var(--ink)}
+@media (max-width:720px){.contrast{grid-template-columns:1fr}.contrast-col + .contrast-col{border-left:0;border-top:1px solid var(--rule)}}
+
+.why{background:var(--paper-warm)}
+.why-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:start}
+@media (max-width:720px){.why-grid{grid-template-columns:1fr;gap:2rem}}
+.why p{font-size:1.1rem;color:var(--ink);margin-bottom:1.1rem}
+.why-callout{background:#fff;border-left:4px solid var(--sand);padding:1.5rem;font-size:1.05rem;color:var(--ink-soft);font-style:italic}
+.why-stat{background:var(--ink);color:#fff;padding:2rem;border-radius:8px}
+.why-stat .num{font-size:3.4rem;font-weight:800;line-height:1;color:var(--sand);display:block;margin-bottom:.6rem}
+.why-stat p{color:#f0e9da;font-size:1rem;margin:0}
+
+.nbh{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+.nbh-card{border:1px solid var(--rule);background:#fff;padding:1.4rem;border-radius:6px}
+.nbh-card h4{font-size:1.05rem;font-weight:700;margin-bottom:.5rem;color:var(--sea-deep)}
+.nbh-card .meta{font-size:.8rem;color:var(--ink-soft);letter-spacing:.04em;text-transform:uppercase;margin-bottom:.7rem}
+.nbh-card .stats{display:flex;gap:1rem;font-size:.85rem;margin-bottom:.7rem}
+.nbh-card .stats span{display:flex;align-items:center;gap:.3rem}
+.nbh-card .stats .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+.nbh-card .stats .dot.s{background:var(--green)}
+.nbh-card .stats .dot.f{background:var(--red)}
+.nbh-card p{font-size:.92rem;color:var(--ink-soft)}
+
+.about{background:var(--ink);color:#fff}
+.about .section-h2{color:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:center}
+@media (max-width:720px){.about-grid{grid-template-columns:1fr}}
+.about-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:2rem;border-radius:8px}
+.about-card .name{font-size:1.3rem;font-weight:800;margin-bottom:.3rem}
+.about-card .role{font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand);margin-bottom:1.2rem}
+.about-card .creds{list-style:none}
+.about-card .creds li{padding:.5rem 0;font-size:.95rem;color:#f0e9da;border-top:1px dashed rgba(255,255,255,.15)}
+.about-card .creds li:first-child{border-top:0}
+.about-body p{color:#e0d8c5;font-size:1.1rem;margin-bottom:1.1rem}
+.about-body p strong{color:var(--sand);font-weight:700}
+
+.fee{background:var(--paper-warm);border:1px solid var(--rule);border-radius:8px;padding:2.5rem;margin-top:2rem}
+.fee-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem;text-align:center;margin-top:1.5rem}
+@media (max-width:720px){.fee-row{grid-template-columns:1fr}}
+.fee-cell{padding:1.5rem;background:#fff;border-radius:6px;border:1px solid var(--rule)}
+.fee-cell .lab{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:.6rem}
+.fee-cell .val{font-size:2rem;font-weight:800;color:var(--ink);line-height:1}
+.fee-cell.win .val{color:var(--green)}
+
+.promise{background:var(--sea);color:#fff;text-align:center}
+.promise .section-h2{color:#fff;max-width:none}
+.promise-text{font-size:1.2rem;color:#d6e6ef;max-width:56ch;margin:0 auto 1.5rem}
+
+.form-section{background:#fff}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+@media (max-width:720px){.form-grid{grid-template-columns:1fr}}
+.form-pitch p{font-size:1.1rem;color:var(--ink-soft);margin-bottom:1rem}
+.form-pitch ul{list-style:none;margin-top:1rem}
+.form-pitch ul li{padding:.6rem 0 .6rem 1.6rem;font-size:1rem;color:var(--ink);border-top:1px dashed var(--rule);position:relative}
+.form-pitch ul li:first-child{border-top:0}
+.form-pitch ul li::before{content:"✓";position:absolute;left:0;top:.6rem;color:var(--green);font-weight:800}
+form#bridgeport-form{background:var(--paper-warm);border:1px solid var(--rule);padding:2rem;border-radius:8px}
+form#bridgeport-form .field{margin-bottom:1.1rem}
+form#bridgeport-form label{display:block;font-size:.85rem;letter-spacing:.04em;font-weight:600;margin-bottom:.4rem;color:var(--ink)}
+form#bridgeport-form input,form#bridgeport-form select,form#bridgeport-form textarea{width:100%;padding:.85rem .9rem;border:1px solid var(--rule);border-radius:4px;font-size:1rem;font-family:inherit;background:#fff;color:var(--ink)}
+form#bridgeport-form input:focus,form#bridgeport-form select:focus,form#bridgeport-form textarea:focus{outline:2px solid var(--sea);outline-offset:1px}
+form#bridgeport-form .row-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media (max-width:480px){form#bridgeport-form .row-2{grid-template-columns:1fr}}
+.form-consent{background:#fff;border:1px solid var(--rule);padding:1rem;border-radius:4px;font-size:.85rem;color:var(--ink-soft);margin:.4rem 0 1.1rem;line-height:1.5}
+.form-consent label{display:flex;align-items:flex-start;gap:.6rem;margin:0;font-weight:400;font-size:.85rem}
+.form-consent input{width:auto;margin:.2rem 0 0}
+.form-disclaimer{font-size:.8rem;color:var(--ink-soft);font-style:italic;margin:.6rem 0 1rem;line-height:1.5}
+.form-submit-btn{background:var(--sea);color:#fff;width:100%;padding:1.1rem;font-weight:700;font-size:1rem;letter-spacing:.02em;border-radius:4px;cursor:pointer;border:0;transition:background .15s ease}
+.form-submit-btn:hover{background:var(--sea-deep)}
+.form-submit-btn:disabled{opacity:.5;cursor:wait}
+.form-status{margin-top:1rem;font-size:.95rem;min-height:1.2rem}
+.form-status.ok{color:var(--green);font-weight:600}
+.form-status.err{color:var(--red);font-weight:600}
+.calendar-fallback{margin-top:2rem;text-align:center;font-size:.95rem;color:var(--ink-soft)}
+.calendar-fallback a{color:var(--sea);font-weight:600}
+
+footer.site{background:var(--ink);color:#c0c8d0;padding:3rem 0 2.5rem;font-size:.88rem;line-height:1.7}
+footer.site .col-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:2.5rem;margin-bottom:2rem}
+@media (max-width:720px){footer.site .col-grid{grid-template-columns:1fr}}
+footer.site h5{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sand);margin-bottom:.8rem;font-weight:700}
+footer.site a{color:#d8d8d2;text-decoration:underline}
+footer.site a:hover{color:var(--sand)}
+.legal{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;font-size:.78rem;color:#8a929a}
+.non-solicit{background:rgba(184,132,62,.1);border:1px solid rgba(184,132,62,.3);padding:.9rem 1rem;border-radius:4px;font-size:.85rem;margin-bottom:1.5rem;color:#d8d2c0;font-style:italic}
+</style>
+</head>
 <body>
-  <!-- Tron background lines -->
-  <div class="tron-line-vertical"></div>
-  <div class="tron-line-vertical"></div>
-  <div class="tron-line-vertical"></div>
-  <div class="tron-line-vertical"></div>
-  <div class="tron-line-horizontal"></div>
-  <div class="tron-line-horizontal"></div>
-  <div class="tron-line-horizontal"></div>
 
-  <!-- Cursor glow -->
-  <div id="cursor-glow"></div>
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-eyebrow">Bridgeport Valencia • The Report Card</div>
+    <h1>23 sold. <span class="accent">17 didn't.</span> Same tract. Different outcomes.</h1>
+    <p class="hero-sub">40 Bridgeport homes listed in the last 12 months. The 23 that closed averaged 27 days on market. The 17 that didn't sat 104 days before the sign came down. The home wasn't the problem.</p>
 
-  <!-- LOAD POPUP -->
-  <div class="load-popup" id="loadPopup">
-    <div class="popup-backdrop" id="popupBackdrop" onclick="typeof window.closePopupModal === 'function' && window.closePopupModal();" role="button" aria-label="Close and continue to site" tabindex="0"></div>
-    <div class="popup-content" id="popupContent">
-      <button type="button" class="close-popup" id="closePopup" aria-label="Close and continue to site" onclick="typeof window.closePopupModal === 'function' && window.closePopupModal(); return false;">&times;</button>
-      <h2 style="color:#FFD700; text-align:center; font-size:clamp(1.5rem,4vw,2.2rem);">See What's Changing in Bridgeport</h2>
-      <p style="text-align:center; margin-bottom:1rem; color:#CBD5E0;">Enter your address for a free impact report.</p>
-      <div class="popup-iframe-container">
-        <iframe
-          src="https://api.honorelevate.com/widget/form/QAZlRzClnksdygyPtDjM"
-          style="width:100%; height:100%; border:none; border-radius:3px"
-          id="popup-iframe"
-          data-layout="{'id':'POPUP'}"
-          data-trigger-type="alwaysShow"
-          data-trigger-value=""
-          data-activation-type="alwaysActivated"
-          data-activation-value=""
-          data-deactivation-type="neverDeactivate"
-          data-deactivation-value=""
-          data-form-name="bridgeport.scv123.com"
-          data-height="1497"
-          data-layout-iframe-id="popup-iframe"
-          data-form-id="QAZlRzClnksdygyPtDjM"
-          title="bridgeport.scv123.com"
-        ></iframe>
+    <div class="hero-stats">
+      <div class="hero-stat"><span class="num">40</span><span class="lab">listed in 12 mo</span></div>
+      <div class="hero-stat"><span class="num">42.5%</span><span class="lab">never closed</span></div>
+      <div class="hero-stat"><span class="num">10/17</span><span class="lab">cut price first</span></div>
+      <div class="hero-stat"><span class="num">$1.615M</span><span class="lab">top sale</span></div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#report" class="btn btn-primary">Get the Bridgeport Report Card →</a>
+      <a href="https://api.leadconnectorhq.com/widget/booking/uRJ2Die6ffBI5XBTScDz" target="_blank" rel="noopener" class="btn btn-secondary">Or skip ahead. 17-min call.</a>
+    </div>
+    <p class="hero-fineprint">No yard sign. No pressure. The whole picture on one page, sent to your inbox.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="section-eyebrow">By the numbers</div>
+    <h2 class="section-h2">Same buyers shopped both groups.</h2>
+    <p class="section-lead">Pulled every Bridgeport sale and every fail from the last twelve months. Sold, expired, cancelled, withdrawn. Days on market, price drops, list-to-close ratio. Here's the split.</p>
+
+    <div class="contrast">
+      <div class="contrast-col sold">
+        <div class="contrast-label">23 closed</div>
+        <div class="contrast-bignum">27</div>
+        <div class="contrast-tag">days on market, median</div>
+        <ul class="contrast-stats">
+          <li><span class="k">Median sale price</span><span class="v">$850,000</span></li>
+          <li><span class="k">Top sale</span><span class="v">$1,615,000</span></li>
+          <li><span class="k">List-to-sold ratio (median)</span><span class="v">98.78%</span></li>
+          <li><span class="k">Median price/sqft</span><span class="v">$413</span></li>
+          <li><span class="k">Cut price before selling</span><span class="v">8 of 23</span></li>
+        </ul>
       </div>
-      <div class="popup-footer">
-        <a href="#" id="continueToSite" class="continue-link">Continue to Site →</a>
+      <div class="contrast-col failed">
+        <div class="contrast-label">17 never closed</div>
+        <div class="contrast-bignum">104</div>
+        <div class="contrast-tag">days on market before pulled</div>
+        <ul class="contrast-stats">
+          <li><span class="k">Status: Expired</span><span class="v">9</span></li>
+          <li><span class="k">Status: Canceled</span><span class="v">7</span></li>
+          <li><span class="k">Status: Withdrawn</span><span class="v">1</span></li>
+          <li><span class="k">Mean DOM before pulled</span><span class="v">123</span></li>
+          <li><span class="k">Cut price before quitting</span><span class="v">10 of 17</span></li>
+        </ul>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-container">
-      <div class="logo-area">
-        <span class="domain"><a href="https://bridgeport.scv123.com" target="_blank">Bridgeport.SCV123.com</a></span>
-        <span class="tagline">Valencia's Lakeside Community — Know What Your Home Is Worth</span>
+<div class="divider-thin"></div>
+
+<section class="why">
+  <div class="wrap">
+    <div class="section-eyebrow">What happened</div>
+    <h2 class="section-h2">Day one is the whole game.</h2>
+
+    <div class="why-grid">
+      <div>
+        <p>The 17 that never closed were not bad homes. They were not in worse condition. They were not on uglier streets. <strong>Same tract, same buyers shopping at the same time.</strong></p>
+        <p>The split came from one decision: <strong>pricing and positioning on day one.</strong></p>
+        <p>The first 14 days of a listing are the only 14 days you have leverage. After that, agents start treating it like inventory. Buyers start asking why it's still sitting. Every price cut from there costs more than it saved.</p>
+        <div class="why-callout">"Of the 17 Bridgeport homes that didn't sell, 10 cut their price at least once before giving up. Price wrong on day one, you pay for it all the way down."</div>
       </div>
       <div>
-        <a href="#" class="btn-gold" id="openPopupBtn">Get the Impact Report</a>
+        <div class="why-stat">
+          <span class="num">$0</span>
+          <p>Bridgeport homes I've personally sold. The depth here is from analysis, not from any closed deal in this tract. Fair to call it out. The power's in the read, not the resume.</p>
+        </div>
       </div>
     </div>
-  </header>
-
-  <!-- Sticky CTA -->
-  <div class="sticky-cta" id="stickyCta">
-    <span style="font-weight:600; color:#FFD700;">What's changing in YOUR neighborhood?</span>
-    <a href="#" class="btn-gold" id="stickyPopupBtn">Get the Data</a>
   </div>
+</section>
 
-  <!-- Hero Section -->
-  <section style="padding-top: 1rem; padding-bottom: 2rem;">
-    <div class="bg-topography"></div>
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-video">
-          <div class="embed-container">
-            <iframe src="https://www.loom.com/embed/98914a405c35420fa77b0d0868062447" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div>
-        <h1><span class="gold-highlight">Bridgeport Valencia — Your Neighborhood, Your Numbers</span></h1>
-        <p style="font-size: 1.3rem; margin: 1.5rem 0; color: #CBD5E0;">Lake community. Top-rated schools. Strong resale. Here's what's actually happening to home values in Bridgeport right now.</p>
-        <p style="font-size: 1.1rem; margin-bottom: 2rem; color: #A0AEC0;">One report shows how everything happening in Santa Clarita impacts your home's value.</p>
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
-          <span class="badge">🏘️ Bridgeport HOA Insights</span>
-          <span class="badge">🏫 Bridgeport Elementary Data</span>
-          <span class="badge">💧 Lakeside Premium Value</span>
-        </div>
-        <div class="data-ticker">
-          <div class="data-ticker-track">
-            <span class="data-ticker-item">💰 <span>Bridgeport Recent Sale Prices</span></span>
-            <span class="data-ticker-item">🏗️ <span>New Valencia Construction Impact</span></span>
-            <span class="data-ticker-item">🏫 <span>School Rating Trends</span></span>
-            <span class="data-ticker-item">💧 <span>Lake Community Premium</span></span>
-            <span class="data-ticker-item">🚗 <span>McBean Pkwy Traffic Data</span></span>
-            <span class="data-ticker-item">🛍️ <span>Bridgeport Marketplace Walkability</span></span>
-            <span class="data-ticker-item">🏚️ <span>Distressed Bridgeport Listings</span></span>
-            <span class="data-ticker-item">🚫 <span>Expired Listings in Bridgeport</span></span>
-            <span class="data-ticker-item">❌ <span>Cancelled Bridgeport Sales</span></span>
-            <span class="data-ticker-item">📈 <span>Price Per Sq Ft Trends</span></span>
-            <span class="data-ticker-item">🤝 <span>HOA Fee Impact on Value</span></span>
-            <span class="data-ticker-item">➕ <span>and more</span></span>
-            <span class="data-ticker-item">💰 <span>Bridgeport Recent Sale Prices</span></span>
-            <span class="data-ticker-item">🏗️ <span>New Valencia Construction Impact</span></span>
-            <span class="data-ticker-item">🏫 <span>School Rating Trends</span></span>
-            <span class="data-ticker-item">💧 <span>Lake Community Premium</span></span>
-            <span class="data-ticker-item">🚗 <span>McBean Pkwy Traffic Data</span></span>
-            <span class="data-ticker-item">🛍️ <span>Bridgeport Marketplace Walkability</span></span>
-            <span class="data-ticker-item">🏚️ <span>Distressed Bridgeport Listings</span></span>
-            <span class="data-ticker-item">🚫 <span>Expired Listings in Bridgeport</span></span>
-            <span class="data-ticker-item">❌ <span>Cancelled Bridgeport Sales</span></span>
-            <span class="data-ticker-item">📈 <span>Price Per Sq Ft Trends</span></span>
-            <span class="data-ticker-item">🤝 <span>HOA Fee Impact on Value</span></span>
-            <span class="data-ticker-item">➕ <span>and more</span></span>
-          </div>
-        </div>
-        <div class="agent-card">
-          <img src="https://storage.googleapis.com/msgsndr/3z37W4oH1lMfraSObL1X/media/696fa38ccc95d73cca1b1774.png" alt="Connor T. MacIvor, Exclusive Sellers Realtor" class="agent-photo">
-          <div class="agent-details">
-            <div class="agent-name">Connor T. MacIvor</div>
-            <div class="agent-title">Exclusive Sellers Realtor</div>
-            <div class="agent-contact">661-400-1720<br>25060 Avenue Stanford Suite 150, Valencia CA 91355</div>
-            <div class="agent-license">CALDRE #01238257 | SYNC Brokerage</div>
-          </div>
-        </div>
+<section class="tight">
+  <div class="wrap">
+    <div class="section-eyebrow">9 sub-tracts inside Bridgeport</div>
+    <h2 class="section-h2">Each one prices differently.</h2>
+    <p class="section-lead">A home in The Island has nothing in common pricing-wise with one in The Colony. Same HOA, different markets. The 12-month split per sub-tract:</p>
+
+    <div class="nbh">
+      <div class="nbh-card">
+        <h4>The Island (TISLE)</h4>
+        <div class="meta">Lake-side, 8 listed</div>
+        <div class="stats"><span><span class="dot s"></span>3 sold</span><span><span class="dot f"></span>5 failed</span></div>
+        <p>Highest-priced sub-tract (top sale $1.615M). Also the most contested. More fails than sales last year.</p>
+      </div>
+      <div class="nbh-card">
+        <h4>The Colony (COLNY)</h4>
+        <div class="meta">5 listed, all closed</div>
+        <div class="stats"><span><span class="dot s"></span>5 sold</span><span><span class="dot f"></span>0 failed</span></div>
+        <p>Best sell-through in Bridgeport. Every Colony listing in the window closed. Strongest buyer demand right now.</p>
+      </div>
+      <div class="nbh-card">
+        <h4>Waterford (WATRF)</h4>
+        <div class="meta">6 listed</div>
+        <div class="stats"><span><span class="dot s"></span>3 sold</span><span><span class="dot f"></span>3 failed</span></div>
+        <p>Even split. Pricing on day one decided who closed and who didn't. Classic "depends on the agent" tract.</p>
+      </div>
+      <div class="nbh-card">
+        <h4>Stoneypointe (STONY)</h4>
+        <div class="meta">5 listed</div>
+        <div class="stats"><span><span class="dot s"></span>3 sold</span><span><span class="dot f"></span>2 failed</span></div>
+        <p>Larger floor plans, family-driven sales cycle. 60% sell-through this year.</p>
+      </div>
+      <div class="nbh-card">
+        <h4>The Cove (TCOVE)</h4>
+        <div class="meta">4 listed</div>
+        <div class="stats"><span><span class="dot s"></span>3 sold</span><span><span class="dot f"></span>1 failed</span></div>
+        <p>Cul-de-sac premium. Quieter streets pay off. One of the top closes in the tract sold here at $1.475M after 194 DOM.</p>
+      </div>
+      <div class="nbh-card">
+        <h4>Cabot Bay (CABOT)</h4>
+        <div class="meta">5 listed</div>
+        <div class="stats"><span><span class="dot s"></span>2 sold</span><span><span class="dot f"></span>3 failed</span></div>
+        <p>Sub-tract under pressure. More failures than sales last 12 months. Pricing must be sharp here.</p>
+      </div>
+      <div class="nbh-card">
+        <h4>Spinnaker Point (SPINP)</h4>
+        <div class="meta">3 listed</div>
+        <div class="stats"><span><span class="dot s"></span>1 sold</span><span><span class="dot f"></span>2 failed</span></div>
+        <p>Smallest unit count. Premium positioning, thin comp set. Mispricing has nowhere to hide.</p>
+      </div>
+      <div class="nbh-card">
+        <h4>The Landing (LANDG)</h4>
+        <div class="meta">2 listed</div>
+        <div class="stats"><span><span class="dot s"></span>1 sold</span><span><span class="dot f"></span>1 failed</span></div>
+        <p>Edgewater Lane sale closed at $1.398M in 12 days. The 1 failure shows it's not the address, it's the strategy.</p>
+      </div>
+      <div class="nbh-card">
+        <h4>Backbay (BACKB)</h4>
+        <div class="meta">1 listed, sold</div>
+        <div class="stats"><span><span class="dot s"></span>1 sold</span><span><span class="dot f"></span>0 failed</span></div>
+        <p>Smallest sample. The one Backbay listing in the window closed. Limited data point but a clean one.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Impact Factors -->
-  <section style="background:#0A0E18;">
-    <div class="bg-topography"></div>
-    <div class="container">
-      <h2 class="text-center">7 forces shaping Bridgeport home values right now.</h2>
-      <p class="text-center" style="max-width:700px; margin:0 auto 3rem; color:#A0AEC0;">We aggregate public data, city plans, traffic studies, and crime stats to show you what's really happening in your part of SCV.</p>
-      <div class="grid-3">
-        <div class="impact-card"><div class="impact-icon">🏗️</div><h3>New Valencia Construction</h3><p>2,300+ units planned nearby. How supply impacts Bridgeport scarcity and your price.</p></div>
-        <div class="impact-card"><div class="impact-icon">💧</div><h3>Lake Community Premium</h3><p>Waterfront and greenbelt-adjacent homes command measurable premiums. We track the spread.</p></div>
-        <div class="impact-card"><div class="impact-icon">🏫</div><h3>School Zone Value</h3><p>Bridgeport Elementary is one of Saugus Union's top-rated schools. How ratings move prices.</p></div>
-        <div class="impact-card"><div class="impact-icon">🛍️</div><h3>Bridgeport Marketplace</h3><p>Walkable retail within the community. Livability scores and buyer demand correlation.</p></div>
-        <div class="impact-card"><div class="impact-icon">🚗</div><h3>McBean Pkwy Traffic</h3><p>Commute patterns, signal changes, freeway access. How connectivity affects desirability.</p></div>
-        <div class="impact-card"><div class="impact-icon">🏘️</div><h3>HOA Health & Fees</h3><p>HOA financials, reserve funds, and fee trends directly impact net buyer purchasing power.</p></div>
-        <div class="impact-card"><div class="impact-icon">📊</div><h3>Crime & Safety Data</h3><p>SCV Sheriff data by neighborhood. Bridgeport's safety profile vs. surrounding communities.</p></div>
-        <div class="impact-card"><div class="impact-icon">📈</div><h3>Price Per Sq Ft Shifts</h3><p>Not averages — micro-neighborhood price movement within Bridgeport's specific tracts.</p></div>
-        <div class="impact-card"><div class="impact-icon">🎯</div><h3>Strategic Buyer Matching</h3><p>We identify and match your home with qualified buyers before the MLS. Private, targeted, effective.</p></div>
+<div class="divider-thin"></div>
+
+<section class="about">
+  <div class="wrap">
+    <div class="section-eyebrow" style="color: var(--sand);">Who's reading the data</div>
+    <h2 class="section-h2">Connor MacIvor.<br>Sellers only. SCV only.</h2>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="name">Connor T. MacIvor</div>
+        <div class="role">Sellers Only Agent™</div>
+        <ul class="creds">
+          <li>27+ years licensed (DRE #01238257)</li>
+          <li>20 years LAPD, honorary retirement</li>
+          <li>23 years total law enforcement</li>
+          <li>SYNC Brokerage</li>
+          <li>Santa Clarita Valley resident</li>
+          <li>One agent. Every listing. No team.</li>
+        </ul>
+      </div>
+      <div class="about-body">
+        <p>Three years as a State of New Mexico Certified Correctional Officer. Then 17 years sworn LAPD full-time, plus 3 years as a Level III Reserve Officer. Honorable retirement at 20. <strong>The reps that matter for real estate aren't the listings. They're the years of asking the right questions and reading what people don't say.</strong></p>
+        <p>I sell homes in Santa Clarita. Sellers only. <strong>$17,000 flat fee.</strong> Full MLS. Full marketing. Full negotiation. No percentage. No team to feed. Same outcome a 6% agent delivers, with $30,000+ left in your equity on a Bridgeport sale.</p>
+        <p>That's the whole pitch. The rest is the data.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Bridge Strategy -->
-  <section style="background:#0B0F1C;">
-    <div class="bg-topography"></div>
-    <div class="container">
-      <div class="grid-2" style="align-items: center;">
-        <div style="text-align: center;">
-          <div style="font-size: 8rem; line-height: 1; color: #FFD700; text-shadow: 0 0 30px #FFD700, 0 0 60px #FFD700; animation: fadeInUp 0.8s ease-out;">🤝</div>
-          <p style="color: #4F9DA6; font-weight: 600; letter-spacing: 2px; margin-top: -0.5rem;">EXCLUSIVE ACCESS</p>
+<section class="tight">
+  <div class="wrap-narrow">
+    <div class="section-eyebrow">The fee math</div>
+    <h2 class="section-h2">$17,000 flat. Not 6%.</h2>
+    <p class="section-lead">On the Bridgeport median sale of $850,000, here's the difference in your account.</p>
+
+    <div class="fee">
+      <div class="fee-row">
+        <div class="fee-cell">
+          <div class="lab">Median Bridgeport sale</div>
+          <div class="val">$850,000</div>
         </div>
-        <div>
-          <h2 style="margin-bottom: 0.5rem;">The Bridgeport Bridge Strategy</h2>
-          <h3 style="color:#FFD700; font-size: 1.8rem; margin-bottom: 1.5rem;">Sell Without the Circus.</h3>
-          <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
-            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color:#4F9DA6; font-size: 1.5rem;">✓</span> <strong>Zero Prep</strong> – No staging, no repairs, no open houses.</li>
-            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color:#4F9DA6; font-size: 1.5rem;">✓</span> <strong>Total Privacy</strong> – Your home never hits the MLS; no yard sign.</li>
-            <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem;"><span style="color:#4F9DA6; font-size: 1.5rem;">✓</span> <strong>No‑Hassle Entry Point</strong> – Test the market with zero commitment.</li>
-          </ul>
-          <p style="margin-bottom: 2rem; color: #CBD5E0;">We pair your home with a specific qualified buyer through a Single Party Compensation Agreement. It's off‑market, exclusive, and built on trust.</p>
-          <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href="#" class="btn-gold" id="bridgeStrategyBtn" onclick="document.getElementById('loadPopup').classList.remove('hidden'); return false;">Learn the Bridge Strategy</a>
-            <a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="border-color:rgba(79,157,166,0.8); color:#9ADBE8;">Why Sellers Only? →</a>
-          </div>
+        <div class="fee-cell">
+          <div class="lab">A 6% listing fee</div>
+          <div class="val">$51,000</div>
+        </div>
+        <div class="fee-cell win">
+          <div class="lab">Sellers Only Agent™ flat</div>
+          <div class="val">$17,000</div>
         </div>
       </div>
+      <p style="margin-top: 1.8rem; text-align: center; font-size: 1.05rem; color: var(--ink-soft);">
+        Difference: <strong style="color: var(--green); font-size: 1.4rem;">$34,000</strong> on the median sale. <strong style="color: var(--green); font-size: 1.4rem;">$79,900</strong> on the top sale ($1.615M).
+      </p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Why Sellers-Only -->
-  <section>
-    <div class="container">
-      <div class="grid-2" style="align-items: center;">
-        <div>
-          <h2>Why a sellers-only agent?</h2>
-          <p style="font-size:1.2rem; margin-bottom:1.5rem;">Because your equity deserves undivided loyalty.</p>
-          <div style="background:rgba(255,215,0,0.06); border:1px solid rgba(255,215,0,0.25); border-radius:16px; padding:1.25rem 1.5rem; margin-bottom:2rem;">
-            <p style="font-size:0.9rem; text-transform:uppercase; letter-spacing:1px; color:#FFD700; font-weight:600; margin-bottom:0.5rem;">The elephant in the room</p>
-            <p style="margin-bottom:0.75rem;">Some agents will say a sellers-only model means fewer buyers or that you need someone who "does both sides." Here's the truth: I worked with home buyers for 21 years and I still work with buyers on every one of my listings — but since 2021 I've always been on the seller's side.</p>
-            <p style="margin-bottom:0;">I see what buyers want and what they ask for. I also see how, when the same agent represents both sides, there's a different kind of advantage taken — one that doesn't exist in a sellers-only model. Your side stays clear. So yes: a sellers-only agent is good for sellers.</p>
+<section class="promise">
+  <div class="wrap-narrow">
+    <div class="section-eyebrow" style="color: var(--sand);">The 1st &amp; 15th</div>
+    <h2 class="section-h2">Two emails a month. One number per email. No pitch.</h2>
+    <p class="promise-text">Median sale, median days on market, biggest movement on the lake-side streets. That's it. If the timing changes for you, you ask, I call. Otherwise, talk in two weeks.</p>
+  </div>
+</section>
+
+<section class="form-section" id="report">
+  <div class="wrap">
+    <div class="section-eyebrow">Free. No yard sign. No follow-up loop.</div>
+    <h2 class="section-h2">Get the Bridgeport Report Card.</h2>
+
+    <div class="form-grid">
+      <div class="form-pitch">
+        <p>You'll get the full Bridgeport breakdown the way I built it for myself, plus the 1st &amp; 15th cadence going forward.</p>
+        <ul>
+          <li>All 40 listings: 23 sold, 9 expired, 7 cancelled, 1 withdrawn — with DOM and price-drop history</li>
+          <li>Sub-tract pricing across all 9 areas of Bridgeport</li>
+          <li>Lake-side premium math vs Cabot Bay / Spinnaker pressure</li>
+          <li>2 emails a month. One number per email. Easy unsubscribe.</li>
+          <li>Optional 17-minute call when the timing's right for you. You ask, I call.</li>
+        </ul>
+        <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--ink-soft);">
+          Connor MacIvor, Sellers Only Agent™, DRE #01238257.<br>
+          661-400-1720 (call) • 661-263-4801 (text)
+        </p>
+      </div>
+
+      <form id="bridgeport-form" novalidate>
+        <input type="hidden" name="community" value="Bridgeport">
+        <input type="hidden" name="campaign_source" value="bridgeport-2026-q2">
+        <input type="hidden" name="source_url" value="https://bridgeport.scv123.com">
+
+        <div class="row-2">
+          <div class="field">
+            <label for="f-first">First Name *</label>
+            <input id="f-first" name="first_name" type="text" required autocomplete="given-name">
           </div>
-          <div style="display: flex; flex-direction: column; gap:1.5rem;">
-            <div style="display: flex; gap:1rem;"><span style="color:#4F9DA6; font-size:1.5rem;">✓</span><div><strong>No dual agency – ever.</strong> I never represent buyers. If a buyer contacts me directly, I refer them to a dedicated <strong>Buyer-Only specialist</strong> from my vetted network. Your interests stay 100% protected.</div></div>
-            <div style="display: flex; gap:1rem;"><span style="color:#4F9DA6; font-size:1.5rem;">✓</span><div><strong>Hostile vetting environment.</strong> Your home is shown only to qualified buyers represented by their own agent. That agent must bring their best offer, knowing I'm 100% on your side.</div></div>
-            <div style="display: flex; gap:1rem;"><span style="color:#4F9DA6; font-size:1.5rem;">✓</span><div><strong>Exclusive Buyer-Agent Network.</strong> I've built a network of trusted buyer-only agents who handle all showings and negotiations with buyers. Your loyalty is never divided.</div></div>
+          <div class="field">
+            <label for="f-last">Last Name *</label>
+            <input id="f-last" name="last_name" type="text" required autocomplete="family-name">
           </div>
-          <a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" class="btn-gold btn-gold-large" style="margin-top:1.5rem; box-shadow:0 0 25px rgba(255,215,0,0.4);">Explore the Sellers-Only Philosophy →</a>
         </div>
-        <div style="display:flex; flex-direction:column; align-items:stretch; gap:1.25rem;">
-          <a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" style="display:block; width:100%; line-height:0;">
-            <img src="assets/sellers-only-logo.png" alt="Sellers Only Agent — 100% Seller Loyalty" style="width:100%; height:auto; border-radius:24px; border:1px solid rgba(79,157,166,0.2); display:block;" loading="lazy">
-          </a>
-          <div style="background:rgba(79,157,166,0.1); padding:2rem; border-radius:24px; border:1px solid rgba(79,157,166,0.2);">
-            <p style="font-size:2rem; font-weight:700; margin-bottom:1rem;">100%</p>
-            <p style="font-size:1.2rem;">of my business is sellers-only. No exceptions. That's the "Honor" in Connor with Honor.</p>
-            <a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" class="btn-gold" style="margin-top:1.25rem; display:inline-block;">Sellers-Only Philosophy</a>
-          </div>
+
+        <div class="field">
+          <label for="f-email">Email *</label>
+          <input id="f-email" name="email" type="email" required autocomplete="email">
         </div>
+
+        <div class="field">
+          <label for="f-phone">Phone (for the report and timing-based check-in)</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(661) 400-1720">
+        </div>
+
+        <div class="field">
+          <label for="f-address">Bridgeport Property Address</label>
+          <input id="f-address" name="property_address" type="text" autocomplete="street-address" placeholder="Street + number, Valencia">
+        </div>
+
+        <div class="field">
+          <label for="f-timeline">Timeline</label>
+          <select id="f-timeline" name="timeline" required>
+            <option value="">Choose one</option>
+            <option value="just-curious">Just curious about my number</option>
+            <option value="ready-now">Ready to sell in the next 90 days</option>
+            <option value="6-12-months">6 to 12 months out</option>
+            <option value="12-plus-months">12+ months</option>
+          </select>
+        </div>
+
+        <div class="form-disclaimer">
+          If your home is currently listed for sale, this is not intended as a solicitation.
+        </div>
+
+        <div class="form-consent">
+          <label>
+            <input type="checkbox" name="consent" required>
+            <span>I agree to receive the Bridgeport Report and the 1st &amp; 15th market emails from Connor MacIvor. Message and data rates may apply for any optional SMS. I can reply STOP or unsubscribe at any time.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="form-submit-btn" id="f-submit">Send Me the Report →</button>
+        <div class="form-status" id="f-status" role="status" aria-live="polite"></div>
+        <div class="calendar-fallback">
+          Want to skip the report and book the 17-min call?
+          <a href="https://api.leadconnectorhq.com/widget/booking/uRJ2Die6ffBI5XBTScDz" target="_blank" rel="noopener">Pick a morning slot.</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="non-solicit">
+      If your home is currently listed for sale, this is not intended as a solicitation. You're receiving this because Santa Clarita public records list you as a Bridgeport property owner. Real estate marketing communication.
+    </div>
+
+    <div class="col-grid">
+      <div>
+        <h5>Connor MacIvor, Realtor</h5>
+        <p>
+          CA DRE #01238257<br>
+          SYNC Brokerage<br>
+          Santa Clarita, CA 91355<br>
+          <a href="tel:+16614001720">661-400-1720</a> (call)<br>
+          661-263-4801 (text)<br>
+          <a href="mailto:connor@scv123.com">connor@scv123.com</a>
+        </p>
+      </div>
+      <div>
+        <h5>The fine print</h5>
+        <p>
+          <a href="/privacypolicy.html">Privacy Policy</a><br>
+          <a href="/termsofservice.html">Terms of Service</a><br>
+          Reply STOP to opt out of any communication.<br>
+          Reply HELP for contact info.
+        </p>
       </div>
     </div>
-  </section>
 
-  <!-- Calendar -->
-  <section class="calendar-section">
-    <div class="container">
-      <h2 style="color:#FFD700;">Book a Strategy Call</h2>
-      <p style="font-size:1.2rem; max-width:600px; margin:1rem auto;">Get 15 minutes with Connor to discuss your home's potential.</p>
-      <div class="calendar-container">
-        <iframe 
-          src="https://api.honorelevate.com/widget/booking/sMwNSzPnGoniBv3yatCI" 
-          style="width:100%; height:700px; border:none; overflow:hidden;" 
-          scrolling="no" 
-          id="Z8jnI8EmlhCCe7s59AeT_1771474780654"
-          title="Booking Calendar"
-        ></iframe>
-      </div>
+    <div class="legal">
+      © 2026 Connor MacIvor • SYNC Brokerage • All data sourced from CRMLS as of 2026-04-28. Information deemed reliable but not guaranteed.
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <strong>Connor T. MacIvor</strong>
-          <p><a href="https://sellersonlyagent.com/" target="_blank" rel="noopener noreferrer" style="color:#FFD700;">Sellers-Only Philosophy → SellersOnlyAgent.com</a></p>
-          <p>CALDRE #01238257<br>SYNC Brokerage</p>
-          <p>25060 Avenue Stanford, Suite 150<br>Valencia, CA 91355</p>
-          <p><a href="tel:6614001720" target="_blank">661-400-1720</a></p>
-          <p><a href="mailto:connor@SantaClaritaOpenHouses.com" target="_blank">connor@SantaClaritaOpenHouses.com</a></p>
-          <p><a href="https://www.SantaClaritaOpenHouses.com" target="_blank">SantaClaritaOpenHouses.com</a></p>
-          <p style="font-style: italic; margin-top:1rem; font-weight:700;">If your home is currently listed for sale this is not a solicitation.</p>
-        </div>
-        <div class="footer-col">
-          <strong>Connect</strong>
-          <div class="social-links">
-            <a href="https://facebook.com/santaclaritaopenhouses" target="_blank">Facebook</a>
-            <a href="https://x.com/connorwithhonor" target="_blank">X</a>
-            <a href="https://tiktok.com/@santaclaritaopenhouses" target="_blank">TikTok</a>
-            <a href="https://instagram.com/santaclaritaopenhouses" target="_blank">Instagram</a>
-            <a href="https://linkedin.com/company/santaclaritaopenhouses" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <strong>Legal</strong>
-          <p><a href="https://bridgeport.scv123.com/privacy-policy" target="_blank">Privacy Policy</a></p>
-          <p><a href="https://bridgeport.scv123.com/terms-of-service" target="_blank">Terms of Service</a></p>
-          <p>© 2026 Honor Elevate</p>
-        </div>
-      </div>
-      <p style="text-align:center;"><a href="https://honorelevate.com" target="_blank" style="color:#4F9DA6;">Coded by Connor with Honor | AI Growth Architect</a></p>
-      <hr>
-      <p style="text-align:center; color:#4A5568;">Data sourced from public records and city planning.</p>
-    </div>
-  </footer>
+<script>
+(function() {
+  const form = document.getElementById('bridgeport-form');
+  const submit = document.getElementById('f-submit');
+  const status = document.getElementById('f-status');
 
-  <!-- Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:YOUR_HOTJAR_ID, hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID');
-    fbq('track', 'PageView');
-  </script>
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    status.textContent = '';
+    status.className = 'form-status';
 
-  <script src="https://api.honorelevate.com/js/form_embed.js"></script>
-  <script>
-    (function() {
-      const cursorGlow = document.getElementById('cursor-glow');
-      if (cursorGlow) {
-        document.addEventListener('mousemove', (e) => {
-          cursorGlow.style.opacity = '1';
-          cursorGlow.style.left = e.clientX + 'px';
-          cursorGlow.style.top = e.clientY + 'px';
-        });
-        document.addEventListener('mouseleave', () => {
-          cursorGlow.style.opacity = '0';
-        });
-      }
+    if (!form.checkValidity()) {
+      status.textContent = 'Please fill the required fields.';
+      status.className = 'form-status err';
+      return;
+    }
 
-      const loadPopup = document.getElementById('loadPopup');
-      const closePopup = document.getElementById('closePopup');
-      const continueLink = document.getElementById('continueToSite');
-      const openPopupBtn = document.getElementById('openPopupBtn');
-      const stickyPopupBtn = document.getElementById('stickyPopupBtn');
-      const bridgeStrategyBtn = document.getElementById('bridgeStrategyBtn');
+    const data = Object.fromEntries(new FormData(form).entries());
+    submit.disabled = true;
+    submit.textContent = 'Sending…';
 
-      function showPopup() {
-        loadPopup.classList.remove('hidden');
-      }
-      function hidePopup() {
-        loadPopup.classList.add('hidden');
-        sessionStorage.setItem('popupShown', 'true');
-      }
-      window.closePopupModal = hidePopup;
-
-      if (closePopup) {
-        closePopup.addEventListener('click', hidePopup);
-        closePopup.addEventListener('touchstart', hidePopup, { passive: true });
-      }
-      if (continueLink) {
-        continueLink.addEventListener('click', (e) => {
-          e.preventDefault();
-          hidePopup();
-        });
-      }
-      const popupBackdrop = document.getElementById('popupBackdrop');
-      if (popupBackdrop) {
-        popupBackdrop.addEventListener('click', hidePopup);
-        popupBackdrop.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); hidePopup(); } });
-      }
-      if (openPopupBtn) {
-        openPopupBtn.addEventListener('click', (e) => {
-          e.preventDefault();
-          showPopup();
-        });
-      }
-      if (stickyPopupBtn) {
-        stickyPopupBtn.addEventListener('click', (e) => {
-          e.preventDefault();
-          showPopup();
-        });
-      }
-      if (bridgeStrategyBtn) {
-        bridgeStrategyBtn.addEventListener('click', (e) => {
-          e.preventDefault();
-          showPopup();
-        });
-      }
-
-      if (!sessionStorage.getItem('popupShown')) {
-        setTimeout(() => {
-          showPopup();
-        }, 2000);
-      }
-
-      const sticky = document.getElementById('stickyCta');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 600) {
-          sticky.classList.add('show');
-        } else {
-          sticky.classList.remove('show');
-        }
+    try {
+      const res = await fetch('/.netlify/functions/bridgeport-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
       });
+      const out = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(out.message || 'Server error');
 
-      const urlParams = new URLSearchParams(window.location.search);
-      const source = urlParams.get('source') || 'direct';
+      status.innerHTML = "✓ The Report Card is on its way to <strong>" + (data.email || 'your inbox') + "</strong>. Check your inbox in the next few minutes.";
+      status.className = 'form-status ok';
+      submit.textContent = 'Sent';
+      form.reset();
+    } catch (err) {
+      status.textContent = 'Could not send right now. Try again, or text VALUE to 661-263-4801.';
+      status.className = 'form-status err';
+      submit.disabled = false;
+      submit.textContent = 'Send Me the Report →';
+    }
+  });
+})();
+</script>
 
-      const popupIframe = document.getElementById('popup-iframe');
-      if (popupIframe) {
-        let src = popupIframe.src;
-        if (src.indexOf('?') === -1) {
-          src += '?source=' + encodeURIComponent(source);
-        } else {
-          src += '&source=' + encodeURIComponent(source);
-        }
-        popupIframe.src = src;
-      }
-    })();
-  </script>
 </body>
 </html>
