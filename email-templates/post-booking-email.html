@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirmed: 17-min Bridgeport call</title>
+<!--
+  EMAIL TEMPLATE: bridgeport-post-booking-confirmation
+  Triggered: Workflow 4 (Calendar > Appointment Booked) on the
+             Bridgeport Strategy Call calendar (uRJ2Die6ffBI5XBTScDz)
+  Send from: Connor MacIvor <connor@scv123.com>
+  Reply-To: connor@scv123.com
+  Subject: Confirmed: 17-min Bridgeport call {{appointment.date}}
+  Preheader: What we'll cover, plus a 90-second video.
+  Pre-launch dependency: Loom video for booking confirmation must be
+  recorded by Connor on PC, URL stored in custom_values.loom_booking_url.
+  Until then, the video block degrades gracefully (link still works as a
+  YouTube/placeholder; replace before T1 launch).
+-->
+<style>
+  body { margin:0; padding:0; background:#fafaf7; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:#0f1d2c; line-height:1.55; }
+  .container { max-width:600px; margin:0 auto; background:#ffffff; padding:40px 32px; }
+  h1 { font-size:1.5rem; line-height:1.2; margin:0 0 1rem; color:#0f1d2c; }
+  p { font-size:1rem; margin:0 0 1.1rem; color:#2a3947; }
+  .appt-card { background:#1d4d6b; color:#ffffff; padding:1.4rem; border-radius:6px; text-align:center; margin:1.4rem 0; }
+  .appt-card .lab { font-size:0.78rem; letter-spacing:0.18em; text-transform:uppercase; color:#c4a47c; margin-bottom:0.4rem; font-weight:700; }
+  .appt-card .when { font-size:1.4rem; font-weight:800; color:#ffffff; line-height:1.2; }
+  .video-frame { background:#f3eee5; border:1px solid #d8d2c4; padding:1rem; border-radius:6px; margin:1.4rem 0; }
+  .video-frame a { color:#1d4d6b; font-weight:700; text-decoration:underline; }
+  .bring-list { background:#f3eee5; padding:1.2rem 1.4rem; border-radius:6px; margin:1.4rem 0; }
+  .bring-list h3 { font-size:0.95rem; letter-spacing:0.06em; text-transform:uppercase; margin:0 0 0.6rem; color:#0f1d2c; }
+  .bring-list ul { margin:0; padding-left:1.2rem; }
+  .bring-list li { padding:0.3rem 0; font-size:0.95rem; color:#2a3947; }
+  .cta-secondary { display:inline-block; color:#1d4d6b; text-decoration:underline; font-weight:600; }
+  .footer { font-size:0.78rem; color:#6a7480; padding-top:1.5rem; border-top:1px solid #d8d2c4; margin-top:2rem; line-height:1.6; }
+  .non-solicit { background:rgba(184,132,62,0.1); border:1px solid rgba(184,132,62,0.3); padding:0.8rem 1rem; border-radius:4px; font-size:0.85rem; margin:1.2rem 0; color:#5a4a30; font-style:italic; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>{{contact.first_name}}, you're on the calendar.</h1>
+
+<p>Confirmed.</p>
+
+<div class="appt-card">
+  <div class="lab">17-min Bridgeport call</div>
+  <div class="when">{{appointment.start_date}} at {{appointment.start_time}}</div>
+</div>
+
+<p>Before we hop on, a 90-second video on what we'll cover:</p>
+
+<div class="video-frame">
+  ▶ <a href="{{custom_values.loom_booking_url}}">Watch the 90-second prep video</a>
+</div>
+
+<div class="bring-list">
+  <h3>Bring</h3>
+  <ul>
+    <li>Approximate timeline to sell</li>
+    <li>One question that has been nagging you about the market</li>
+  </ul>
+</div>
+
+<p>I'll cover three things:</p>
+
+<p>
+1. Specific value range on your address based on the closest comps in your sub-tract.<br>
+2. What price gets the most buyers in the door this quarter.<br>
+3. The flat $17,000 vs 6% math on your number.
+</p>
+
+<p>If something comes up and you need to move it, no problem:</p>
+
+<p><a href="{{appointment.cancel_url}}" class="cta-secondary">Reschedule the call</a></p>
+
+<p>See you {{appointment.start_date}}.</p>
+
+<p>
+<strong>Connor MacIvor</strong><br>
+Sellers Only Agent™ • $17,000 flat fee<br>
+DRE #01238257 • SYNC Brokerage<br>
+661-400-1720 (call) • 661-263-4801 (text)
+</p>
+
+<div class="non-solicit">
+If your home is currently listed for sale, this is not intended as a solicitation.
+</div>
+
+<div class="footer">
+You scheduled this call yourself at <a href="https://bridgeport.scv123.com">bridgeport.scv123.com</a> or via the calendar link.<br>
+<br>
+Connor MacIvor • SYNC Brokerage • [SYNC ADDRESS LINE 1] • [LINE 2] • Santa Clarita, CA 91355<br>
+<br>
+Reply STOP to unsubscribe. Reply HELP for contact info. {{unsubscribe_link}}
+</div>
+
+</div>
+</body>
+</html>
