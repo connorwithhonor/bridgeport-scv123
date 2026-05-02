@@ -1,0 +1,44 @@
+functionsDirectory = "/Users/budumacbudu/Projects/sync-work/bridgeport-scv123/netlify/functions"
+functionsDirectoryOrigin = "config"
+headersOrigin = "config"
+plugins = []
+redirects = []
+
+[build]
+publish = "/Users/budumacbudu/Projects/sync-work/bridgeport-scv123"
+publishOrigin = "config"
+functions = "/Users/budumacbudu/Projects/sync-work/bridgeport-scv123/netlify/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[functions]
+
+[functions."*"]
+node_bundler = "esbuild"
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+X-Frame-Options = "DENY"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+
+[[headers]]
+for = "/.netlify/functions/*"
+
+[headers.values]
+Cache-Control = "no-store"

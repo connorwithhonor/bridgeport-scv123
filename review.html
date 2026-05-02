@@ -1,0 +1,253 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Bridgeport REVIEW</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; max-width: 880px; margin: 2rem auto; padding: 0 1.5rem; color:#0f1d2c; line-height:1.55; }
+  h1 { font-size: 2rem; border-bottom: 2px solid #c4a47c; padding-bottom: .4rem; }
+  h2 { font-size: 1.4rem; margin-top: 2rem; color:#1d4d6b; }
+  h3 { font-size: 1.1rem; margin-top: 1.4rem; }
+  ul.checks { list-style: none; padding-left: 0; }
+  ul.checks li { padding: 0.3rem 0; }
+  a { color: #1d4d6b; }
+  code { background:#f3eee5; padding: 0.1rem 0.4rem; border-radius:3px; font-size:0.92em; }
+  pre { background:#1f2937; color:#f9fafb; padding: 1rem; border-radius:6px; overflow-x:auto; font-size:0.85rem; }
+  hr { border:0; border-top: 1px solid #d8d2c4; margin: 1.5rem 0; }
+  .toc { background:#f3eee5; padding:1rem 1.5rem; border-radius:6px; margin:1rem 0 2rem; }
+</style>
+</head><body>
+<div class="toc"><strong>Quick links:</strong>
+  <a href="/">Page</a> ·
+  <a href="/email-templates/welcome-email.html">Welcome email</a> ·
+  <a href="/email-templates/post-booking-email.html">Post-booking email</a>
+</div>
+<h1>Bridgeport — Review Everything Before Ship</h1>
+
+<p><strong>Open this file first.</strong> Every customer-facing asset, every config, every doc — linked here. Eye-pass each, mark it ✓ or send me edits, then I build into HE.</p>
+
+<hr>
+
+<h2>1. The page (browser preview)</h2>
+
+<p><a href="http://localhost:4444/">http://localhost:4444/</a></p>
+
+<p>→ Full rebuild from yesterday. Data-first hero (&quot;23 sold. 17 didn&#x27;t.&quot;), real Bridgeport sub-tract names, lighthouse hero image, embedded form, calendar fallback link, non-solicitation disclaimer in two places. NO &quot;SeventeenK&quot; mentions per stealth rule.</p>
+
+<p><strong>Source:</strong> <code>~/Projects/sync-work/bridgeport-scv123/index.html</code></p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Approved as-is</li>
+<li><input type="checkbox" disabled> Edit needed: ___</li>
+</ul>
+
+<hr>
+
+<h2>2. Email templates (browser preview)</h2>
+
+<h3>Welcome email — fires on form submit (tag `bridgeport-lead` added)</h3>
+<p><a href="http://localhost:4444/email-templates/welcome-email.html">http://localhost:4444/email-templates/welcome-email.html</a></p>
+
+<p><strong>Source:</strong> <code>~/Projects/sync-work/bridgeport-scv123/email-templates/welcome-email.html</code></p>
+
+<p><strong>Subject:</strong> &quot;The Bridgeport Report Card — your copy&quot;</p>
+<p><strong>From:</strong> Connor MacIvor <code>&lt;connor@scv123.com&gt;</code></p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Approved as-is</li>
+<li><input type="checkbox" disabled> Edit needed: ___</li>
+</ul>
+
+<h3>Post-booking confirmation — fires on calendar booking</h3>
+<p><a href="http://localhost:4444/email-templates/post-booking-email.html">http://localhost:4444/email-templates/post-booking-email.html</a></p>
+
+<p><strong>Source:</strong> <code>~/Projects/sync-work/bridgeport-scv123/email-templates/post-booking-email.html</code></p>
+
+<p><strong>Subject:</strong> &quot;Confirmed: 17-min Bridgeport call {{appointment.date}}&quot;</p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Approved as-is</li>
+<li><input type="checkbox" disabled> Edit needed: ___</li>
+</ul>
+
+<h3>T1–T7 cold sequence — already drafted in your build packet</h3>
+<p><strong>Source:</strong> <code>~/Projects/mempalace/projects/bridgeport/build-packet-2026-q2.md</code> (Section 7)</p>
+
+<p>These are the 7 emails that go out over 60 days to the imported list (T1 day 0 → T7 day 60). They&#x27;re your words, copied from your Drive build packet to the palace yesterday. I&#x27;ll port them into HE Email Builder verbatim unless you want me to tweak.</p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Use as-written in build packet</li>
+<li><input type="checkbox" disabled> Edit T1: ___</li>
+<li><input type="checkbox" disabled> Edit T2: ___</li>
+<li><input type="checkbox" disabled> Edit T3: ___</li>
+<li><input type="checkbox" disabled> Edit T4: ___</li>
+<li><input type="checkbox" disabled> Edit T5: ___</li>
+<li><input type="checkbox" disabled> Edit T6: ___</li>
+<li><input type="checkbox" disabled> Edit T7: ___</li>
+</ul>
+
+<hr>
+
+<h2>3. Voice agent (read in editor)</h2>
+
+<p><strong>Prompt:</strong> <code>~/Projects/mempalace/projects/bridgeport/voice-agent/prompt.md</code></p>
+
+<p><strong>Replaces</strong> the generic &quot;My Agent 577 / Customer Support Specialist&quot; template currently in HE. Bridgeport-specific identity, Connor-voice, 3 qualifying questions, NEVER quotes a value, NEVER says SeventeenK.</p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Approved as-is</li>
+<li><input type="checkbox" disabled> Edit needed: ___</li>
+</ul>
+
+<p><strong>Knowledge base — 5 articles to attach:</strong></p>
+<ul>
+<li>KB-1: <code>~/Projects/mempalace/projects/bridgeport/kb-articles/kb-1-neighborhood-profile.md</code></li>
+<li>KB-2: <code>~/Projects/mempalace/projects/bridgeport/kb-articles/kb-2-12-month-performance.md</code></li>
+<li>KB-3: <code>~/Projects/mempalace/projects/bridgeport/kb-articles/kb-3-connor-background.md</code></li>
+<li>KB-4: <code>~/Projects/mempalace/projects/bridgeport/kb-articles/kb-4-flat-fee-explained.md</code></li>
+<li>KB-5: <code>~/Projects/mempalace/projects/bridgeport/kb-articles/kb-5-what-you-get.md</code></li>
+</ul>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> All 5 approved</li>
+<li><input type="checkbox" disabled> Edit needed: ___</li>
+</ul>
+
+<hr>
+
+<h2>4. Workflows (build plan in editor)</h2>
+
+<p><strong>Click guide for all 7 workflows:</strong> <code>~/Projects/mempalace/projects/bridgeport/click-guides/workflow-build-guide.md</code></p>
+
+<p>The 7 workflows I&#x27;ll build in HE → Automation → Workflows via Chrome MCP today:</p>
+
+<p>1. <code>bridgeport-lead-welcome</code> — fires on tag <code>bridgeport-lead</code> add → welcome email + voice agent call + 14-day delay → first snapshot</p>
+<p>2. <code>bridgeport-1st-15th-broadcast</code> — scheduled 1st &amp; 15th 9 AM PT → snapshot to all <code>bridgeport-subscriber</code></p>
+<p>3. <code>bridgeport-reply-detection</code> — email reply → tag, alert SMS to your phone, pause sequence</p>
+<p>4. <code>bridgeport-click-no-book</code> — clicked CTA but no book in 24hr → SMS-2 to contact</p>
+<p>5. <code>bridgeport-high-engagement</code> — 5+ opens in 7 days → SMS-3 personal touch</p>
+<p>6. <code>bridgeport-post-booking-confirmation</code> — calendar booking → confirmation email + 24hr-prior SMS reminder</p>
+<p>7. <code>bridgeport-generic-inbound-sms</code> — non-keyword inbound SMS → auto-ack + alert</p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Approved — go build all 7</li>
+<li><input type="checkbox" disabled> Build only: ___</li>
+<li><input type="checkbox" disabled> Skip / change: ___</li>
+</ul>
+
+<hr>
+
+<h2>5. SMS keyword auto-responses</h2>
+
+<p><strong>Spec:</strong> <code>~/Projects/mempalace/projects/bridgeport/build-packet-2026-q2.md</code> Section 10</p>
+
+<p>VALUE / COMP / COMPS / CALL / LATER / RESCHEDULE / STOP / HELP. Already drafted in your build packet, paste-deploy into HE → Settings → Phone Numbers → 661-263-4801 → Auto-Responder.</p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Use as-written in build packet</li>
+<li><input type="checkbox" disabled> Edit needed: ___</li>
+</ul>
+
+<hr>
+
+<h2>6. The 470 → 407 cleaned import list</h2>
+
+<p><strong>Your CSV:</strong> <code>~/Downloads/Bridgeport 04282026 cleaned - Bridgeport 04282026.csv.csv</code></p>
+
+<p><strong>Already preimport-processed last night:</strong></p>
+<ul>
+<li>407 contacts in</li>
+<li>0 auto-removed (your manual cleanup was thorough — zero brokerage/lender domains, all consumer addresses)</li>
+<li>0 flagged for review</li>
+<li>407 cleaned, ready to import</li>
+</ul>
+
+<p><strong>Three batches saved next to your CSV in <code>~/Downloads/</code>:</strong></p>
+<ul>
+<li><code>...batch-1-of-3.csv</code> — 28 contacts (~7%, soft launch)</li>
+<li><code>...batch-2-of-3.csv</code> — 81 contacts (~20%, day 2)</li>
+<li><code>...batch-3-of-3.csv</code> — 298 contacts (full launch, day 3)</li>
+</ul>
+
+<p><strong>Tags applied per row at import:</strong></p>
+<ul>
+<li><code>bridgeport</code></li>
+<li><code>bridgeport-subscriber</code></li>
+<li><code>bridgeport-2026-04-28</code> (cohort date stamp)</li>
+<li><code>bridgeport-2026-q2</code> (campaign)</li>
+<li><code>source-scv123</code></li>
+<li><code>homeowner-scv</code></li>
+<li><code>email campaign</code></li>
+</ul>
+
+<p>NOT <code>bridgeport-lead</code> — that one&#x27;s reserved for form submits. This list is pre-form contacts.</p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Approved — run batch 1 today</li>
+<li><input type="checkbox" disabled> Wait — adjust tags or list first</li>
+</ul>
+
+<hr>
+
+<h2>7. Things blocking the actual T1 send</h2>
+
+<p><strong>These are the only items left holding up the first email send.</strong> All four need answers from you today, then the campaign can go.</p>
+
+<h3>a. SYNC Brokerage exact physical address + brokerage DRE number</h3>
+<p>For the email compliance footer. CAN-SPAM legal requirement. Won&#x27;t send a single email without these.</p>
+
+<ul>
+<li>SYNC physical address line 1: ___</li>
+<li>SYNC physical address line 2 (city/state/zip): ___</li>
+<li>SYNC brokerage DRE number: ___</li>
+</ul>
+
+<h3>b. A2P campaign type confirmation</h3>
+<p>Go to HE → Settings → Phone Numbers → 661-263-4801. Look at the registered campaign type.</p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> Marketing (workflows 4 &amp; 5 SMS clear to fire)</li>
+<li><input type="checkbox" disabled> Customer Care or Mixed (workflows 4 &amp; 5 need adjusting before firing)</li>
+<li><input type="checkbox" disabled> Not registered yet (handle this first)</li>
+</ul>
+
+<h3>c. Loom T3 video (required before T3 sends Day 10)</h3>
+<p>The 4-min &quot;walked Bridgeport this morning&quot; video. Connor records on PC.</p>
+
+<ul>
+<li>Loom URL: ___ (paste into HE → Settings → Custom Values → loom_t3_url)</li>
+</ul>
+
+<h3>d. Loom booking confirmation video (required before any bookings happen)</h3>
+<p>The 90-sec &quot;what we&#x27;ll cover on the call&quot; video. Connor records on PC.</p>
+
+<ul>
+<li>Loom URL: ___ (paste into HE → Settings → Custom Values → loom_booking_url)</li>
+</ul>
+
+<hr>
+
+<h2>8. Things to deploy (Netlify + ALN)</h2>
+
+<p>Once page approved, queue up the deploys:</p>
+
+<ul class="checks">
+<li><input type="checkbox" disabled> <strong>bridgeport.scv123.com</strong> — add <code>GHL_PIT</code> env var → deploy</li>
+<li><input type="checkbox" disabled> <strong>5 sync-work LAPD-fixed sites</strong> — connorwithhonorai, cwhfrank, scvbot.com, aipropertysite.com, santaclaritaartificialintelligence.com (any new index.html change deploys; LAPD year fixes are the changes to ship)</li>
+<li><input type="checkbox" disabled> <strong>23 ALN sites</strong> — staging in <code>mempalace/staging/aln-emdash-fix/deploy/aln-*/index.html</code>, batch deploy</li>
+</ul>
+
+<hr>
+
+<h2>What I do once everything above has a ✓</h2>
+
+<p>Order of operations:</p>
+<p>1. Add <code>GHL_PIT</code> to Netlify + deploy <code>bridgeport.scv123.com</code> so the form is live (you do this — your dashboard)</p>
+<p>2. Build the 7 workflows in HE UI via Chrome MCP (I drive, you watch)</p>
+<p>3. Port T1–T7 + welcome + post-booking emails into HE Email Builder (I do this in UI)</p>
+<p>4. Wire the welcome email + voice agent into Workflow 1 (lead-welcome)</p>
+<p>5. Set up the A2P keyword auto-responses on 661-263-4801</p>
+<p>6. Send a test contact through end-to-end (you watch — welcome lands, voice agent calls)</p>
+<p>7. Greenlight Batch 1 import (28 contacts) → real campaign begins</p>
+<p>8. Day 2: Batch 2 (81 contacts), Day 3: Batch 3 (298 contacts)</p>
+<p>9. Monitor: open rate ≥25% on batch 1 = green light to scale; &lt;15% = pause + troubleshoot</p>
+
+<p>ETA from approval to first real email going out: <strong>~3-4 hours of focused work today + your address/DRE answers.</strong></p>
+
+</body></html>

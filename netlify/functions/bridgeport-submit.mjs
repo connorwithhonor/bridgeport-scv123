@@ -173,7 +173,7 @@ export default async (req, _context) => {
 
   return jsonRes(200, {
     ok: true,
-    message: "Thanks — your Bridgeport Report Card is on its way.",
+    message: "Thanks. Your Bridgeport Report Card is on its way.",
     contactId,
   });
 };
