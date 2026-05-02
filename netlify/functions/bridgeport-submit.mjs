@@ -36,8 +36,8 @@ const VALID_TIMELINES = Object.keys(TIMELINE_TAG);
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function jsonRes(statusCode, body) {
-  return {
-    statusCode,
+  return new Response(JSON.stringify(body), {
+    status: statusCode,
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "https://bridgeport.scv123.com",
@@ -45,8 +45,7 @@ function jsonRes(statusCode, body) {
       "Access-Control-Allow-Headers": "Content-Type",
       "Cache-Control": "no-store",
     },
-    body: JSON.stringify(body),
-  };
+  });
 }
 
 function normalizePhone(input) {
