@@ -36,7 +36,10 @@ const VALID_TIMELINES = Object.keys(TIMELINE_TAG);
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function jsonRes(statusCode, body) {
-  return new Response(JSON.stringify(body), {
+  // 204 No Content MUST NOT carry a body — passing one makes the runtime throw
+  // (surfaces as a 502 on the CORS OPTIONS preflight). Send null body for 204.
+  const isNoContent = statusCode === 204;
+  return new Response(isNoContent ? null : JSON.stringify(body), {
     status: statusCode,
     headers: {
       "Content-Type": "application/json",
