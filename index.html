@@ -37,6 +37,18 @@
   "affiliation": {"@type": "Organization","name": "SYNC Brokerage"}
 }
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"Sellers Only Agent in Bridgeport Real Estate, short walkthrough","description":"A 2-minute walkthrough of the Bridgeport data, the $17,000 Fair Fixed Fee, and how Connor MacIvor runs sellers-only in Bridgeport Valencia.","thumbnailUrl":"https://bridgeport.scv123.com/assets/bridgeport-lighthouse.jpg","uploadDate":"2026-04-28","embedUrl":"https://www.loom.com/embed/60b15f3acf5c4ed7b05a9edae4bf78a2"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How much does it cost to sell a home in Bridgeport Valencia?","acceptedAnswer":{"@type":"Answer","text":"A flat $17,000 Fair Fixed Fee to list, the listing side of the commission, the same fee on the median Bridgeport sale or the top sale. A typical listing agent charges a percentage; at the Bridgeport median near $850,000 a 3% listing fee is about $25,500, so the flat fee keeps roughly $8,500 more, and far more on higher-value homes."}},
+{"@type":"Question","name":"What is the median home price in Bridgeport, Valencia?","acceptedAnswer":{"@type":"Answer","text":"Of 40 Bridgeport homes listed in the last 12 months, the 23 that sold had a median price of $850,000, a median 27 days on market, and a top sale of $1,615,000."}},
+{"@type":"Question","name":"Why did 17 Bridgeport homes fail to sell?","acceptedAnswer":{"@type":"Answer","text":"The 17 that never closed sat a median of 104 days and 10 of them cut price before pulling the listing. Same tract and same buyers as the homes that sold; the difference was pricing and positioning on day one."}},
+{"@type":"Question","name":"What is a sellers-only agent?","acceptedAnswer":{"@type":"Answer","text":"Connor MacIvor represents sellers only, never the buyer in the same transaction, so there is no dual agency and your interests stay fully protected."}},
+{"@type":"Question","name":"How do I get the Bridgeport Report Card?","acceptedAnswer":{"@type":"Answer","text":"Request it free on this page. You receive all 40 listings with days-on-market and price-drop history, sub-tract pricing across all 9 Bridgeport areas, and a twice-monthly market number, with no obligation."}}
+]}
+</script>
 
 <style>
 :root{--ink:#0f1d2c;--ink-soft:#2a3947;--paper:#fafaf7;--paper-warm:#f3eee5;--sea:#1d4d6b;--sea-deep:#0e2a3c;--sand:#c4a47c;--gold:#b8843e;--red:#b53939;--green:#2c7a4e;--rule:#d8d2c4}
@@ -169,8 +181,20 @@ footer.site a{color:#d8d8d2;text-decoration:underline}
 footer.site a:hover{color:var(--sand)}
 .legal{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;font-size:.78rem;color:#8a929a}
 .non-solicit{background:rgba(184,132,62,.1);border:1px solid rgba(184,132,62,.3);padding:.9rem 1rem;border-radius:4px;font-size:.85rem;margin-bottom:1.5rem;color:#d8d2c0;font-style:italic}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:1.5rem}
+@media(max-width:560px){.calc{grid-template-columns:1fr}}
+.calc-box{background:var(--paper-warm);border:1px solid var(--rule);border-radius:8px;padding:1.8rem}
+.calc-lab{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+.calc-hv{font-size:2.4rem;font-weight:800;color:var(--ink);margin:.3rem 0 1rem;line-height:1}
+.calc-box input[type=range]{width:100%;accent-color:var(--sea);height:6px}
+.calc-scale{display:flex;justify-content:space-between;color:var(--ink-soft);font-size:.78rem;margin-top:.4rem}
+.calc-row{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.55rem 0;color:var(--ink);font-size:1rem}
+.calc-row strong{font-size:1.2rem}
+.calc-row.keep strong{font-size:1.9rem}
+.calc-rule{height:1px;background:var(--rule);margin:.5rem 0}
+.calc-note{font-size:.85rem;color:var(--ink-soft);margin-top:.6rem}
 </style>
-</head>
+<link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png"><meta property="og:image" content="https://bridgeport.scv123.com/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bridgeport.scv123.com/og-image.png"></head>
 <body>
 
 <section class="hero">
@@ -391,6 +415,29 @@ footer.site a:hover{color:var(--sand)}
   </div>
 </section>
 
+<section class="tight" id="calc">
+  <div class="wrap-narrow">
+    <div class="section-eyebrow">One side of the table</div>
+    <h2 class="section-h2">Percentage vs. flat: what you'd pay to list.</h2>
+    <p class="section-lead">A typical listing agent charges a percentage of your sale, just for the listing side. I charge a flat $17,000. Slide to your Bridgeport home's value and watch what a percentage costs as the price climbs.</p>
+    <div class="calc">
+      <div class="calc-box">
+        <div class="calc-lab">Your estimated home value</div>
+        <div class="calc-hv" id="hvOut">$850,000</div>
+        <input type="range" id="hv" min="500000" max="2000000" step="10000" value="850000" aria-label="Your estimated home value">
+        <div class="calc-scale"><span>$500K</span><span>$2M</span></div>
+      </div>
+      <div class="calc-box">
+        <div class="calc-row"><span>Traditional 3% listing fee</span><strong id="pctFee">$25,500</strong></div>
+        <div class="calc-row"><span>Connor &mdash; flat listing fee</span><strong style="color:var(--sea)">$17,000</strong></div>
+        <div class="calc-rule"></div>
+        <div class="calc-row keep"><span id="keepLabel">You keep</span><strong id="keepVal" style="color:var(--green)">$8,500</strong></div>
+        <p class="calc-note" id="calcNote">A percentage grows with your price. The flat fee doesn't. The more your home is worth, the more you keep.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="promise">
   <div class="wrap-narrow">
     <div class="section-eyebrow" style="color: var(--sand);">The 1st &amp; 15th</div>
@@ -506,8 +553,8 @@ footer.site a:hover{color:var(--sand)}
       <div>
         <h5>The fine print</h5>
         <p>
-          <a href="/privacypolicy.html">Privacy Policy</a><br>
-          <a href="/termsofservice.html">Terms of Service</a><br>
+          <a href='/privacypolicy'>Privacy Policy</a><br>
+          <a href='/termsofservice'>Terms of Service</a><br>
           Reply STOP to opt out of any communication.<br>
           Reply HELP for contact info.
         </p>
@@ -561,6 +608,20 @@ footer.site a:hover{color:var(--sand)}
       submit.textContent = 'Send Me the Report →';
     }
   });
+})();
+</script>
+<script>
+(function(){
+  var hv=document.getElementById('hv'); if(!hv)return;
+  var FLAT=17000,RATE=0.03,m=function(n){return '$'+Math.round(n).toLocaleString('en-US');};
+  function c(){var v=+hv.value,f=v*RATE,k=f-FLAT;
+    document.getElementById('hvOut').textContent=m(v);
+    document.getElementById('pctFee').textContent=m(f);
+    var kv=document.getElementById('keepVal'),kl=document.getElementById('keepLabel'),nt=document.getElementById('calcNote');
+    if(k>=0){kl.textContent='You keep';kv.textContent=m(k);kv.style.color='var(--green)';nt.textContent='A percentage grows with your price. The flat fee does not. The more your home is worth, the more you keep.';}
+    else{kl.textContent='Percentage is lower by';kv.textContent=m(-k);kv.style.color='var(--ink)';nt.textContent='At this price a percentage edges out the flat fee. The flat $17,000 wins on higher-value homes, and you get full service either way.';}
+  }
+  hv.addEventListener('input',c);c();
 })();
 </script>
 
