@@ -1,13 +1,13 @@
-functionsDirectory = "/Users/budumacbudu/Projects/sync-work/bridgeport-scv123/netlify/functions"
+functionsDirectory = "/Users/macv/dev/bridgeport-scv123/netlify/functions"
 functionsDirectoryOrigin = "config"
 headersOrigin = "config"
 plugins = []
 redirects = []
 
 [build]
-publish = "/Users/budumacbudu/Projects/sync-work/bridgeport-scv123"
+publish = "/Users/macv/dev/bridgeport-scv123"
 publishOrigin = "config"
-functions = "/Users/budumacbudu/Projects/sync-work/bridgeport-scv123/netlify/functions"
+functions = "/Users/macv/dev/bridgeport-scv123/netlify/functions"
 
 [build.environment]
 
